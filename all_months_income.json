@@ -1,0 +1,222 @@
+[
+  {
+    "id": "c52bf6opba",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-07-03",
+    "at": "2026-07-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3wf6alymob",
+    "type": "in",
+    "category": "sawit",
+    "amount": 1067.86,
+    "description": "Duit Sawit",
+    "date": "2026-07-07",
+    "at": "2026-07-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wovcwzayo8",
+    "type": "in",
+    "category": "sawit",
+    "amount": 685.0,
+    "description": "Duit Sawit",
+    "date": "2026-07-08",
+    "at": "2026-07-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sxz75m9zng",
+    "type": "in",
+    "category": "sewa",
+    "amount": 3000.0,
+    "description": "Sewa Rumah",
+    "date": "2026-07-14",
+    "at": "2026-07-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jbb73fcvm3",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-08-05",
+    "at": "2026-08-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "m4i9m5n2oq",
+    "type": "in",
+    "category": "dividen",
+    "amount": 667.0,
+    "description": "Dividen Koperasi",
+    "date": "2026-08-07",
+    "at": "2026-08-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fq8oiie3cm",
+    "type": "in",
+    "category": "sawit",
+    "amount": 1000.0,
+    "description": "Duit Sawit",
+    "date": "2026-08-08",
+    "at": "2026-08-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ixfgcg1qeo",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-09-07",
+    "at": "2026-09-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sjedtaz861",
+    "type": "in",
+    "category": "dividen",
+    "amount": 667.0,
+    "description": "Dividen Koperasi",
+    "date": "2026-09-09",
+    "at": "2026-09-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "761ytsu44d",
+    "type": "in",
+    "category": "sawit",
+    "amount": 1000.0,
+    "description": "Duit Sawit",
+    "date": "2026-09-10",
+    "at": "2026-09-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5p6borh0an",
+    "type": "in",
+    "category": "sewa",
+    "amount": 2800.0,
+    "description": "Sewa Rumah",
+    "date": "2026-10-01",
+    "at": "2026-10-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "e5p7yztqes",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-10-06",
+    "at": "2026-10-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5tukxdxr3q",
+    "type": "in",
+    "category": "sawit",
+    "amount": 818.0,
+    "description": "Duit Sawit",
+    "date": "2026-10-10",
+    "at": "2026-10-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3rxzc81fyv",
+    "type": "in",
+    "category": "dividen",
+    "amount": 667.0,
+    "description": "Dividen Koperasi",
+    "date": "2026-10-15",
+    "at": "2026-10-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2pi5oltc8x",
+    "type": "in",
+    "category": "sewa",
+    "amount": 2800.0,
+    "description": "Sewa Rumah",
+    "date": "2026-11-01",
+    "at": "2026-11-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ylgzu6s7ze",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-11-06",
+    "at": "2026-11-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d3lnxgjqfl",
+    "type": "in",
+    "category": "sawit",
+    "amount": 653.0,
+    "description": "Duit Sawit",
+    "date": "2026-11-10",
+    "at": "2026-11-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kr6xewxzm6",
+    "type": "in",
+    "category": "dividen",
+    "amount": 667.0,
+    "description": "Dividen Koperasi",
+    "date": "2026-11-15",
+    "at": "2026-11-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3pbhzg89dg",
+    "type": "in",
+    "category": "sewa",
+    "amount": 2800.0,
+    "description": "Sewa Rumah",
+    "date": "2026-12-01",
+    "at": "2026-12-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kdfj50hgo9",
+    "type": "in",
+    "category": "gaji",
+    "amount": 6646.2,
+    "description": "Gaji (Net)",
+    "date": "2026-12-06",
+    "at": "2026-12-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "65mtb0lfgn",
+    "type": "in",
+    "category": "sawit",
+    "amount": 600.0,
+    "description": "Duit Sawit",
+    "date": "2026-12-10",
+    "at": "2026-12-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "br16j0ijdl",
+    "type": "in",
+    "category": "dividen",
+    "amount": 667.0,
+    "description": "Dividen Koperasi",
+    "date": "2026-12-15",
+    "at": "2026-12-15T00:00:00.000Z",
+    "plan": true
+  }
+]

@@ -375,6 +375,7 @@
   <div class="s-sec">
     <div class="s-head">Data</div>
     <div class="s-row" onclick="exportData()"><span class="s-lbl">Export JSON</span><span class="chev">›</span></div>
+    <div class="s-row" onclick="restoreFromServer()" style="color:var(--green)"><span class="s-lbl">⬇️ Restore Budget Data (all months)</span><span class="chev">›</span></div>
     <div class="s-row" onclick="document.getElementById('import-budget-file').click()"><span class="s-lbl">Import as Budget Plan</span><span class="chev">›</span></div>
     <input type="file" id="import-budget-file" accept=".json" style="display:none" onchange="importData(this,true)">
     <div class="s-row" onclick="document.getElementById('import-actual-file').click()"><span class="s-lbl">Import as Actual</span><span class="chev">›</span></div>
@@ -932,6 +933,29 @@ function importData(input, asPlan) {
     } catch { alert('Could not read file. Make sure it is a valid JSON.'); }
   };
   reader.readAsText(file);
+}
+
+// ─── Restore budget data from server ─────────────────────────────
+async function restoreFromServer() {
+  if (!confirm('This will fetch and import all months income + expenses as Budget Plan. Continue?')) return;
+  try {
+    const base = 'https://amirhmzh77.github.io/expense-tracker/';
+    const [r1, r2] = await Promise.all([
+      fetch(base + 'all_months_expenses.json'),
+      fetch(base + 'all_months_income.json')
+    ]);
+    const [exp, inc] = await Promise.all([r1.json(), r2.json()]);
+    const incoming = [
+      ...(Array.isArray(exp) ? exp : exp.data || []),
+      ...(Array.isArray(inc) ? inc : inc.data || [])
+    ];
+    if (!incoming.length) { alert('No data found on server.'); return; }
+    const { existing, added, replaced } = _mergeImport(incoming, true);
+    const merged = existing.map(x => { const u = replaced.find(r => r.id === x.id); return u || x; });
+    store([...merged, ...added]);
+    renderSettings(); refresh(); renderBudget(); renderActual();
+    alert(`Done. ${added.length} added, ${replaced.length} updated.`);
+  } catch (err) { alert('Failed to fetch data. Check your internet connection.'); }
 }
 
 // ─── Copy month (plan entries only) ──────────────────────────────
