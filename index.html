@@ -526,7 +526,7 @@ const setB   = v => v ? localStorage.setItem('ahh_bdg', v) : localStorage.remove
 
 // ─── Utils ───────────────────────────────────────────────────────
 const fmt  = n => 'RM ' + Math.abs(+n).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');
-const dKey = d => d.toISOString().split('T')[0];
+const dKey = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 const mKey = d => d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0');
 const uid  = () => Date.now().toString(36) + Math.random().toString(36).slice(2,5);
 const cat  = (id, type) => {
