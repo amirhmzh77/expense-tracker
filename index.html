@@ -341,6 +341,9 @@
     <span class="nav-label" id="mon-lbl"></span>
     <button class="arrow" onclick="changeMonth(1)">›</button>
   </div>
+  <div style="display:flex;justify-content:flex-end;padding:4px 14px 0">
+    <button onclick="copyMonth()" style="font-size:11px;background:var(--green);color:#fff;border:none;border-radius:8px;padding:5px 11px;cursor:pointer;font-family:inherit">Copy → next month</button>
+  </div>
   <div class="hero">
     <div class="lbl">Total Out</div>
     <div class="amt" id="mon-out">RM 0.00</div>
@@ -375,8 +378,9 @@
   <div class="s-sec">
     <div class="s-head">Data</div>
     <div class="s-row" onclick="exportData()"><span class="s-lbl">Export JSON</span><span class="chev">›</span></div>
-    <div class="s-row" onclick="document.getElementById('import-file').click()"><span class="s-lbl">Import JSON</span><span class="chev">›</span></div>
+    <div class="s-row" onclick="document.getElementById('import-file').click()"><span class="s-lbl">Import JSON (file)</span><span class="chev">›</span></div>
     <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(this)">
+    <div class="s-row" onclick="openPaste()"><span class="s-lbl">Paste JSON</span><span class="chev">›</span></div>
     <div class="s-row" onclick="confirmClear()"><span class="s-lbl" style="color:#c0392b">Clear All Data</span><span class="chev">›</span></div>
   </div>
   <div class="s-sec">
@@ -385,6 +389,23 @@
     <p style="font-size:11px;color:var(--muted);text-align:center;padding:12px 0">
       Safari → Share → Add to Home Screen to install
     </p>
+  </div>
+</div>
+
+<!-- ═══ PASTE SHEET ═══ -->
+<div class="overlay" id="paste-ov">
+  <div class="sheet">
+    <div class="handle"></div>
+    <div class="sheet-hdr">
+      <span class="sheet-title">Paste JSON</span>
+      <button class="sheet-close" onclick="closePaste()">✕</button>
+    </div>
+    <div class="fg">
+      <label class="fl">Paste exported JSON here</label>
+      <textarea id="paste-txt" class="fi" rows="8" placeholder='[{"id":"...","type":"out",...}]  or  {"data":[...]}'
+        style="resize:vertical;min-height:120px;font-size:12px;font-family:monospace"></textarea>
+    </div>
+    <button class="btn btn-primary" onclick="importPasted()">Import</button>
   </div>
 </div>
 
@@ -785,8 +806,62 @@ function importData(input) {
   reader.readAsText(file);
 }
 
+// ─── Copy month ──────────────────────────────────────────────────
+function copyMonth() {
+  const mk  = mKey(vMon);
+  const src = load().filter(e => e.date.startsWith(mk));
+  if (!src.length) { alert('No entries in this month to copy.'); return; }
+  const next = new Date(vMon); next.setMonth(next.getMonth()+1);
+  const nk = mKey(next);
+  const nLabel = next.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
+  if (!confirm(`Copy ${src.length} entries to ${nLabel}?`)) return;
+  const existing = load();
+  const added = src.map(e => ({
+    ...e,
+    id: uid(),
+    date: nk + e.date.slice(7),
+    at: new Date().toISOString()
+  })).filter(e => {
+    // clamp to valid days in the target month
+    const day = +e.date.split('-')[2];
+    const maxDay = new Date(next.getFullYear(), next.getMonth()+1, 0).getDate();
+    return day <= maxDay;
+  });
+  store([...existing, ...added]);
+  alert(`Copied ${added.length} entries to ${nLabel}.`);
+  changeMonth(1);
+}
+
+// ─── Paste import ─────────────────────────────────────────────────
+function openPaste()  { document.getElementById('paste-txt').value=''; document.getElementById('paste-ov').classList.add('open'); }
+function closePaste() { document.getElementById('paste-ov').classList.remove('open'); }
+function importPasted() {
+  const raw = document.getElementById('paste-txt').value.trim();
+  if (!raw) return;
+  try {
+    const parsed = JSON.parse(raw);
+    const incoming = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.data) ? parsed.data : null);
+    if (!incoming) { alert('Invalid JSON. Must be an array or {data:[...]} object.'); return; }
+    const existing = load();
+    const existIds = new Set(existing.map(x => x.id));
+    const added = incoming.filter(x => x.id && x.date && x.amount && !existIds.has(x.id));
+    const replaced = incoming.filter(x => x.id && existIds.has(x.id));
+    if (!incoming.length) { alert('No entries found.'); return; }
+    const msg = added.length && replaced.length
+      ? `Add ${added.length} new + update ${replaced.length} existing?`
+      : added.length ? `Import ${added.length} new entries?`
+      : `Update ${replaced.length} existing entries?`;
+    if (!confirm(msg)) return;
+    const merged = existing.map(x => { const u = replaced.find(r=>r.id===x.id); return u||x; });
+    store([...merged, ...added]);
+    if (parsed.budget) setB(parsed.budget);
+    closePaste(); renderSettings(); refresh();
+    alert(`Done. ${added.length} added, ${replaced.length} updated.`);
+  } catch { alert('Could not parse JSON. Check the format.'); }
+}
+
 // ─── Close on tap outside ────────────────────────────────────────
-['exp-ov','bdg-ov'].forEach(id => {
+['exp-ov','bdg-ov','paste-ov'].forEach(id => {
   document.getElementById(id).addEventListener('click', function(e) {
     if (e.target === this) this.classList.remove('open');
   });
