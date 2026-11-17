@@ -304,6 +304,13 @@
       <div class="sub gold" id="day-in"></div>
     </div>
   </div>
+  <div style="margin:8px 14px;background:var(--card);border-radius:14px;padding:13px 16px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 4px rgba(0,0,0,.07)">
+    <div>
+      <div style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px">Money at Hand</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:2px" id="day-hand-sub">all time net</div>
+    </div>
+    <div id="day-hand" style="font-size:22px;font-weight:700;color:var(--green)">RM 0</div>
+  </div>
   <div class="card" style="padding:0 14px"><div id="day-list"></div></div>
 </div>
 
@@ -568,6 +575,17 @@ function renderDay() {
   document.getElementById('day-out').textContent  = fmt(out);
   document.getElementById('day-cnt').textContent  = items.length + ' item' + (items.length!==1?'s':'');
   document.getElementById('day-in').textContent   = inc > 0 ? '+ ' + fmt(inc) + ' in' : '';
+
+  // Money at hand: cumulative net of all actual entries up to selected day
+  const all    = load().filter(e => !e.plan && e.date <= key);
+  const allIn  = all.filter(e=>e.type==='in' ).reduce((s,e)=>s+e.amount,0);
+  const allOut = all.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
+  const hand   = allIn - allOut;
+  const handEl = document.getElementById('day-hand');
+  handEl.textContent = fmt(hand);
+  handEl.style.color = hand >= 0 ? 'var(--green)' : '#c0392b';
+  document.getElementById('day-hand-sub').textContent = key === today ? 'up to today' : 'up to ' + vDay.toLocaleDateString('en-MY',{day:'numeric',month:'short'});
+
   const list = document.getElementById('day-list');
   if (!items.length) {
     list.innerHTML = `<div class="empty"><div class="icon">💸</div><p>No entries yet.<br>Tap + to add.</p></div>`;
