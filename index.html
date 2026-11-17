@@ -244,6 +244,47 @@
       color: var(--muted); text-transform: uppercase; letter-spacing: .4px;
     }
 
+    /* ── Monthly Grid ── */
+    .mon-grid-wrap {
+      margin: 10px 14px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.1);
+    }
+    .mon-tbl { border-collapse: collapse; background: #fff; font-size: 10px; }
+    .mon-tbl th, .mon-tbl td {
+      padding: 4px 4px; white-space: nowrap;
+      border: 1px solid #dde8dd; text-align: right;
+    }
+    .mon-tbl .s-col {
+      position: sticky; left: 0; z-index: 2; background: #fff;
+      text-align: left; min-width: 84px; max-width: 84px;
+      font-size: 11px; font-weight: 500; padding-left: 7px;
+    }
+    .mon-tbl thead th {
+      background: var(--green); color: #fff; font-weight: 600;
+      font-size: 9px; text-align: center; padding: 5px 3px; line-height: 1.3;
+    }
+    .mon-tbl thead th.s-col { text-align: left; font-size: 11px; }
+    .mon-tbl .sec-hdr td {
+      background: #145530; color: #fff; font-weight: 700;
+      font-size: 10px; letter-spacing: .4px; padding: 5px 5px;
+    }
+    .mon-tbl .sec-hdr td.s-col { text-align: left; }
+    .mon-tbl .in-row td { background: #f2fdf6; }
+    .mon-tbl .in-row td.s-col { background: #f2fdf6; }
+    .mon-tbl .out-row:nth-child(even) td { background: #fafcfa; }
+    .mon-tbl .out-row:nth-child(even) td.s-col { background: #fafcfa; }
+    .mon-tbl .tot-row td { background: #edf3ed; font-weight: 700; }
+    .mon-tbl .tot-row td.s-col { background: #edf3ed; }
+    .mon-tbl .net-row td { background: var(--green); color: #fff; font-weight: 700; }
+    .mon-tbl .net-row td.s-col { background: var(--green); color: #fff; }
+    .mon-tbl .tot-col { background: #e4ede4 !important; font-weight: 700; min-width: 44px; }
+    .mon-tbl .day-col { min-width: 36px; }
+    .in-amt  { color: #0d6e35; font-weight: 600; }
+    .out-amt { color: #c0392b; }
+
     /* ── Settings ── */
     .s-sec { margin: 14px; }
     .s-head { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px; }
@@ -318,11 +359,7 @@
     <div class="sum-tile"><div class="sum-lbl">Net</div><div class="sum-val" id="ms-net">RM 0</div></div>
   </div>
 
-  <div class="card">
-    <div style="font-size:15px;font-weight:700;margin-bottom:11px">By Category</div>
-    <div id="cat-bd"></div>
-  </div>
-  <div id="mon-grps"></div>
+  <div id="mon-grid"></div>
 </div>
 
 <!-- ═══ SETTINGS ═══ -->
@@ -497,78 +534,109 @@ function renderDay() {
 }
 
 // ─── Monthly ─────────────────────────────────────────────────────
+const DOW = ['AHAD','ISN','SEL','RAB','KHA','JUM','SAB'];
 function changeMonth(d) { vMon = new Date(vMon); vMon.setMonth(vMon.getMonth()+d); renderMonth(); }
 
 function renderMonth() {
-  const mk    = mKey(vMon);
-  const items = load().filter(e => e.date.startsWith(mk));
-  const bdg   = getB();
+  const mk  = mKey(vMon);
+  const yr  = vMon.getFullYear(), mo = vMon.getMonth();
+  const dim = new Date(yr, mo+1, 0).getDate();
+
   document.getElementById('mon-lbl').textContent =
     vMon.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
 
+  const items    = load().filter(e => e.date.startsWith(mk));
   const totalOut = items.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
   const totalIn  = items.filter(e=>e.type==='in' ).reduce((s,e)=>s+e.amount,0);
   const net      = totalIn - totalOut;
+
   document.getElementById('mon-out').textContent = fmt(totalOut);
   document.getElementById('mon-cnt').textContent = items.length + ' items';
 
-  // Summary tiles
   const sg = document.getElementById('mon-summary-grid');
-  if (totalIn > 0 || items.length) {
+  if (items.length) {
     sg.style.display = 'grid';
-    document.getElementById('ms-in').textContent  = fmt(totalIn);
+    document.getElementById('ms-in').textContent = fmt(totalIn);
     const netEl = document.getElementById('ms-net');
-    netEl.textContent  = (net >= 0 ? '+' : '-') + ' ' + fmt(Math.abs(net));
-    netEl.className    = 'sum-val ' + (net >= 0 ? 'grn' : 'red');
+    netEl.textContent = (net>=0?'+':'-')+' '+fmt(Math.abs(net));
+    netEl.className = 'sum-val '+(net>=0?'grn':'red');
   } else { sg.style.display = 'none'; }
 
-  // Budget bar
+  const bdg = getB();
   const bbar = document.getElementById('bbar'), btext = document.getElementById('btext');
   if (bdg) {
-    const pct = Math.min(totalOut / bdg * 100, 100);
+    const pct = Math.min(totalOut/bdg*100,100);
     bbar.style.display = btext.style.display = 'block';
     const fill = document.getElementById('bfill');
-    fill.style.width = pct + '%';
-    fill.className   = 'bfill' + (totalOut > bdg ? ' over' : '');
-    document.getElementById('bt-spent').textContent = fmt(totalOut) + ' spent';
-    document.getElementById('bt-limit').textContent = fmt(bdg) + ' budget';
-    document.getElementById('mon-budget-lbl').textContent = Math.round(pct) + '% used';
+    fill.style.width = pct+'%';
+    fill.className = 'bfill'+(totalOut>bdg?' over':'');
+    document.getElementById('bt-spent').textContent = fmt(totalOut)+' spent';
+    document.getElementById('bt-limit').textContent = fmt(bdg)+' budget';
+    document.getElementById('mon-budget-lbl').textContent = Math.round(pct)+'% used';
   } else { bbar.style.display = btext.style.display = 'none'; document.getElementById('mon-budget-lbl').textContent = ''; }
 
-  // Category breakdown (expenses only)
-  const outItems = items.filter(e=>e.type==='out');
-  const totals   = {};
-  outItems.forEach(e => { totals[e.category] = (totals[e.category]||0) + e.amount; });
-  const maxAmt = Math.max(...Object.values(totals), .01);
-  const bd = document.getElementById('cat-bd');
-  if (!Object.keys(totals).length) {
-    bd.innerHTML = '<div style="text-align:center;color:var(--muted);padding:16px 0">No expenses this month</div>';
-  } else {
-    bd.innerHTML = Object.entries(totals).sort((a,b)=>b[1]-a[1]).map(([id,amt]) => {
-      const c = cat(id,'out');
-      return `<div class="cat-row">
-        <div class="cr-icon" style="background:${c.color}22">${c.emoji}</div>
-        <div class="cr-info">
-          <div class="cr-name">${c.label}</div>
-          <div class="mb-wrap"><div class="mb" style="width:${amt/maxAmt*100}%;background:${c.color}"></div></div>
-        </div>
-        <div class="cr-amt">${fmt(amt)}</div>
-      </div>`;
-    }).join('');
-  }
+  // Build per-cell grid
+  const grid = {};
+  items.forEach(e => {
+    const d = +e.date.split('-')[2];
+    const k = e.type+'_'+e.category;
+    if (!grid[k]) grid[k] = {};
+    grid[k][d] = (grid[k][d]||0) + e.amount;
+  });
 
-  // Group by day
-  const byDay = {};
-  items.forEach(e => { (byDay[e.date] = byDay[e.date]||[]).push(e); });
-  const days  = Object.keys(byDay).sort().reverse();
-  document.getElementById('mon-grps').innerHTML = days.map(day => {
-    const di    = byDay[day];
-    const dOut  = di.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
-    const d     = new Date(day+'T00:00:00');
-    const dlbl  = d.toLocaleDateString('en-MY',{weekday:'short',day:'numeric',month:'short'});
-    return `<div class="grp-hdr"><span>${dlbl}</span><span>${fmt(dOut)}</span></div>
-      <div class="card" style="padding:0 14px">${di.slice().reverse().map(e=>eRow(e)).join('')}</div>`;
-  }).join('');
+  const days = Array.from({length:dim},(_,i)=>i+1);
+  const fc = n => n ? (+n).toFixed(n%1?2:0).replace(/\B(?=(\d{3})+(?!\d))/g,',') : '';
+  const dayOut = {}, dayIn = {};
+  days.forEach(d => {
+    dayOut[d] = items.filter(e=>e.type==='out'&&+e.date.split('-')[2]===d).reduce((s,e)=>s+e.amount,0);
+    dayIn[d]  = items.filter(e=>e.type==='in' &&+e.date.split('-')[2]===d).reduce((s,e)=>s+e.amount,0);
+  });
+
+  const emptyTds = '<td></td>'.repeat(dim);
+  let h = `<div class="mon-grid-wrap"><table class="mon-tbl"><thead><tr>
+    <th class="s-col">Category</th>`;
+  days.forEach(d => {
+    const dow = new Date(yr,mo,d).getDay();
+    h += `<th class="day-col">${d}<br>${DOW[dow]}</th>`;
+  });
+  h += `<th class="tot-col">Total</th></tr></thead><tbody>`;
+
+  // MONEY IN section
+  h += `<tr class="sec-hdr"><td class="s-col">MONEY IN</td>${emptyTds}<td></td></tr>`;
+  CATS_IN.forEach(c => {
+    const r = grid['in_'+c.id]||{};
+    const t = Object.values(r).reduce((s,v)=>s+v,0);
+    h += `<tr class="in-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
+    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="in-amt">${v}</span>`:''}</td>`; });
+    h += `<td class="tot-col in-amt">${fc(t)}</td></tr>`;
+  });
+  h += `<tr class="tot-row"><td class="s-col">▲ In Total</td>`;
+  days.forEach(d => h+=`<td>${fc(dayIn[d])}</td>`);
+  h += `<td class="tot-col">${fc(totalIn)}</td></tr>`;
+
+  // MONEY OUT section
+  h += `<tr class="sec-hdr"><td class="s-col">MONEY OUT</td>${emptyTds}<td></td></tr>`;
+  CATS_OUT.forEach(c => {
+    const r = grid['out_'+c.id]||{};
+    const t = Object.values(r).reduce((s,v)=>s+v,0);
+    h += `<tr class="out-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
+    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="out-amt">${v}</span>`:''}</td>`; });
+    h += `<td class="tot-col out-amt">${fc(t)}</td></tr>`;
+  });
+  h += `<tr class="tot-row"><td class="s-col">▼ Out Total</td>`;
+  days.forEach(d => h+=`<td>${fc(dayOut[d])}</td>`);
+  h += `<td class="tot-col">${fc(totalOut)}</td></tr>`;
+
+  // NET row
+  h += `<tr class="net-row"><td class="s-col">NET</td>`;
+  days.forEach(d => {
+    const n = (dayIn[d]||0)-(dayOut[d]||0);
+    h += `<td>${n?fc(Math.abs(n)):''}</td>`;
+  });
+  h += `<td class="tot-col">${fc(Math.abs(net))}</td></tr>`;
+  h += `</tbody></table></div>`;
+
+  document.getElementById('mon-grid').innerHTML = h;
 }
 
 // ─── Settings ────────────────────────────────────────────────────
