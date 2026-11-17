@@ -1,0 +1,6642 @@
+[
+  {
+    "id": "oas9erro5m",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-05-23",
+    "at": "2026-05-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mwwr75s13t",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-05-20",
+    "at": "2026-05-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qwpcboadmg",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-05-04",
+    "at": "2026-05-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d2w5ujefps",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-05-11",
+    "at": "2026-05-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "89w8fodu21",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-05-18",
+    "at": "2026-05-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ilhkvrc3bl",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-05-25",
+    "at": "2026-05-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "edizu8ka5r",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-05-01",
+    "at": "2026-05-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "we66qna2s7",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-05-04",
+    "at": "2026-05-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "x734mmgt8m",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-05-06",
+    "at": "2026-05-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kmju2exnx0",
+    "type": "out",
+    "category": "loan",
+    "amount": 100.0,
+    "description": "Loan",
+    "date": "2026-05-29",
+    "at": "2026-05-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0echhz5ysc",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-05-05",
+    "at": "2026-05-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mum8luark3",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-05-06",
+    "at": "2026-05-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3mgnhoz5ej",
+    "type": "out",
+    "category": "bill",
+    "amount": 139.75,
+    "description": "Bill",
+    "date": "2026-05-07",
+    "at": "2026-05-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8va1lji4bl",
+    "type": "out",
+    "category": "bill",
+    "amount": 15.7,
+    "description": "Bill",
+    "date": "2026-05-08",
+    "at": "2026-05-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cj7i4opm7c",
+    "type": "out",
+    "category": "bill",
+    "amount": 335.7,
+    "description": "Bill",
+    "date": "2026-05-09",
+    "at": "2026-05-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "r2evjovoe9",
+    "type": "out",
+    "category": "bill",
+    "amount": 13.65,
+    "description": "Bill",
+    "date": "2026-05-10",
+    "at": "2026-05-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sp1xswmsu1",
+    "type": "out",
+    "category": "bill",
+    "amount": 14.6,
+    "description": "Bill",
+    "date": "2026-05-11",
+    "at": "2026-05-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bhojw6mqhh",
+    "type": "out",
+    "category": "bill",
+    "amount": 31.7,
+    "description": "Bill",
+    "date": "2026-05-12",
+    "at": "2026-05-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2zqoisr8ps",
+    "type": "out",
+    "category": "bill",
+    "amount": 6.5,
+    "description": "Bill",
+    "date": "2026-05-13",
+    "at": "2026-05-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "pnti6r50c9",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-05-22",
+    "at": "2026-05-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fs1buzb45b",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-05-28",
+    "at": "2026-05-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yhr2jasfky",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-01",
+    "at": "2026-05-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wtrx0fd24y",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-02",
+    "at": "2026-05-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gn2focj7hq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-03",
+    "at": "2026-05-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mkfvxne7rs",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-04",
+    "at": "2026-05-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y0ine1uj6w",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-05",
+    "at": "2026-05-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h0n371pigc",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-06",
+    "at": "2026-05-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0uk44l43ox",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-07",
+    "at": "2026-05-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "v2k3aixbiu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-08",
+    "at": "2026-05-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y038ag3q1f",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-09",
+    "at": "2026-05-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3s020jxjd2",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-10",
+    "at": "2026-05-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p91av9k7hk",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-11",
+    "at": "2026-05-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sarv4uigm8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-12",
+    "at": "2026-05-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1p15tzrz6h",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-13",
+    "at": "2026-05-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p3huzukufi",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-14",
+    "at": "2026-05-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wfrn4lh7gx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-15",
+    "at": "2026-05-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8ptrkyo72s",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-16",
+    "at": "2026-05-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7ajw9a2bvo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-17",
+    "at": "2026-05-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xrts4hq4c4",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-18",
+    "at": "2026-05-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sw3qvpzjvy",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-19",
+    "at": "2026-05-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y0t98d1dzr",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-20",
+    "at": "2026-05-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5ncryxf2l7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-21",
+    "at": "2026-05-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0r6t6qbka9",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-22",
+    "at": "2026-05-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "difk986xqg",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-23",
+    "at": "2026-05-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "49f7ymzvfv",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-24",
+    "at": "2026-05-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "60sgnc1adb",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-25",
+    "at": "2026-05-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yen8kec50b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-26",
+    "at": "2026-05-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p1c8r1505w",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-27",
+    "at": "2026-05-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7ig65bkqo8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-28",
+    "at": "2026-05-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "luqoq8l9ef",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-29",
+    "at": "2026-05-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "umf7bmtt2a",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-30",
+    "at": "2026-05-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8xgsn5zrs4",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-05-31",
+    "at": "2026-05-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kxmxpqkptn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-01",
+    "at": "2026-05-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hb7d9siswj",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-02",
+    "at": "2026-05-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "putawcp7cu",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-03",
+    "at": "2026-05-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6uu43840pz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-04",
+    "at": "2026-05-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qrapl5m76g",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-05",
+    "at": "2026-05-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j6c8n4gxnv",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-06",
+    "at": "2026-05-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c8fbmyngkk",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-07",
+    "at": "2026-05-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fts7w87gnr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-08",
+    "at": "2026-05-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ewxl2o0ogt",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-09",
+    "at": "2026-05-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "a2hyhcuqsi",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-10",
+    "at": "2026-05-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "90crj00mtg",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-11",
+    "at": "2026-05-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "337p41qtdn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-12",
+    "at": "2026-05-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4mfgwpfoz9",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-13",
+    "at": "2026-05-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wxua8qg0fb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-14",
+    "at": "2026-05-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dqprrux8ey",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-15",
+    "at": "2026-05-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "42xlrpsi36",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-16",
+    "at": "2026-05-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fz8jqihvba",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-17",
+    "at": "2026-05-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6xrlm6ot5l",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-18",
+    "at": "2026-05-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "01c3woz4q4",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-19",
+    "at": "2026-05-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "q000ic2mv5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-20",
+    "at": "2026-05-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "euk616otsf",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-21",
+    "at": "2026-05-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d2bnj33u6w",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-22",
+    "at": "2026-05-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rz2p2y31ok",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-23",
+    "at": "2026-05-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "aqxrr3y9b4",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-24",
+    "at": "2026-05-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cueva8llza",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-25",
+    "at": "2026-05-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2e5chchn19",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-26",
+    "at": "2026-05-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s3wnurwhmt",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-27",
+    "at": "2026-05-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1cmqt84f57",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-28",
+    "at": "2026-05-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lfvirkp8vr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-29",
+    "at": "2026-05-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nyrvwn0k4k",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-30",
+    "at": "2026-05-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z1xvqct7am",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-05-31",
+    "at": "2026-05-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "snc7qid1o5",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-06-25",
+    "at": "2026-06-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "eweb2ohr1a",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-06-22",
+    "at": "2026-06-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "odxh3eqkk8",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-06-06",
+    "at": "2026-06-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "q00gdko765",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-06-13",
+    "at": "2026-06-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "svjeaamsti",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-06-22",
+    "at": "2026-06-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gb0ij7ol9n",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-06-29",
+    "at": "2026-06-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jf5uuo40al",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-06-01",
+    "at": "2026-06-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hjvqlxd57r",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-06-03",
+    "at": "2026-06-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qjqmu4ezy0",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-06-05",
+    "at": "2026-06-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "id9y1k1ozh",
+    "type": "out",
+    "category": "loan",
+    "amount": 100.0,
+    "description": "Loan",
+    "date": "2026-06-29",
+    "at": "2026-06-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ldxkbfgitn",
+    "type": "out",
+    "category": "bill",
+    "amount": 499.58,
+    "description": "Bill",
+    "date": "2026-06-05",
+    "at": "2026-06-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "33tvgiyvww",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-06-06",
+    "at": "2026-06-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dlvy8h89an",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-06-07",
+    "at": "2026-06-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lwitkus451",
+    "type": "out",
+    "category": "bill",
+    "amount": 83.8,
+    "description": "Bill",
+    "date": "2026-06-08",
+    "at": "2026-06-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "w2qcfrutja",
+    "type": "out",
+    "category": "bill",
+    "amount": 435.7,
+    "description": "Bill",
+    "date": "2026-06-09",
+    "at": "2026-06-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kn286ftcax",
+    "type": "out",
+    "category": "bill",
+    "amount": 30.4,
+    "description": "Bill",
+    "date": "2026-06-10",
+    "at": "2026-06-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4yanfwvqtp",
+    "type": "out",
+    "category": "bill",
+    "amount": 12.35,
+    "description": "Bill",
+    "date": "2026-06-11",
+    "at": "2026-06-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wqavcrksq5",
+    "type": "out",
+    "category": "bill",
+    "amount": 6.5,
+    "description": "Bill",
+    "date": "2026-06-12",
+    "at": "2026-06-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y1pr39p769",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-06-24",
+    "at": "2026-06-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "anm6h8pwqn",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-06-28",
+    "at": "2026-06-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8ek7vgpytu",
+    "type": "out",
+    "category": "travel",
+    "amount": 39.0,
+    "description": "Travel",
+    "date": "2026-06-22",
+    "at": "2026-06-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jh8c3lwxzw",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-01",
+    "at": "2026-06-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "w1oqewrqj7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-02",
+    "at": "2026-06-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "oz0p1hv8x4",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-03",
+    "at": "2026-06-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9k7gie9n1h",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-04",
+    "at": "2026-06-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sx7a8fbelv",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-05",
+    "at": "2026-06-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nytie27zl5",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-06",
+    "at": "2026-06-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "75lhz4sopo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-07",
+    "at": "2026-06-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6v64g6xgqc",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-08",
+    "at": "2026-06-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cdout5l3a1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-09",
+    "at": "2026-06-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "i9jkavb2rb",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-10",
+    "at": "2026-06-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nbtsfw9hi0",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-11",
+    "at": "2026-06-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "k7079y43n2",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-12",
+    "at": "2026-06-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zihizp6kno",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-13",
+    "at": "2026-06-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8sq98g6isg",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-14",
+    "at": "2026-06-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hkhbzexqbp",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-15",
+    "at": "2026-06-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "05qp3t3lqu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-16",
+    "at": "2026-06-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rr3rmqu68k",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-17",
+    "at": "2026-06-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "914wn0xqwt",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-18",
+    "at": "2026-06-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "m9tsy78ezk",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-19",
+    "at": "2026-06-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "r0s1j4w5fg",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-20",
+    "at": "2026-06-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c1zy6qi08u",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-21",
+    "at": "2026-06-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5y3g6mycn7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-22",
+    "at": "2026-06-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kosqxzzkbw",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-23",
+    "at": "2026-06-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hr8mhz167m",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-24",
+    "at": "2026-06-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hqopcq3z6f",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-25",
+    "at": "2026-06-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0isbl1a1u7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-26",
+    "at": "2026-06-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0b7l6txkcc",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-27",
+    "at": "2026-06-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f9xxcqsaf2",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-28",
+    "at": "2026-06-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "85xwzl6efu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-29",
+    "at": "2026-06-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gcx6ni9m1n",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-06-30",
+    "at": "2026-06-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "pau9aeju5k",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-01",
+    "at": "2026-06-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rhzde4jcze",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-02",
+    "at": "2026-06-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z243gfflam",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-03",
+    "at": "2026-06-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ilgyr22sni",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-04",
+    "at": "2026-06-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sjkp7w8yun",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-05",
+    "at": "2026-06-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bnwu4fu860",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-06",
+    "at": "2026-06-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6tpw0czmmw",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-07",
+    "at": "2026-06-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "li6iijp3tn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-08",
+    "at": "2026-06-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vsgmx3fpax",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-09",
+    "at": "2026-06-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lhmoh1c03u",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-10",
+    "at": "2026-06-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dc6zz8l4ro",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-11",
+    "at": "2026-06-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kv6rxnpas1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-12",
+    "at": "2026-06-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z0eps8zk4q",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-13",
+    "at": "2026-06-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vuoiogbedm",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-14",
+    "at": "2026-06-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "a91fe69ldr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-15",
+    "at": "2026-06-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hv34a31hnw",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-16",
+    "at": "2026-06-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "t545z9j25y",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-17",
+    "at": "2026-06-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c1r6ceehdn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-18",
+    "at": "2026-06-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h5mbgim5ry",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-19",
+    "at": "2026-06-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nu6mqil9gp",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-20",
+    "at": "2026-06-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "31s7wvf1nb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-21",
+    "at": "2026-06-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "itjohpshiz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-22",
+    "at": "2026-06-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j6tatvp74v",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-23",
+    "at": "2026-06-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dr757du2b9",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-24",
+    "at": "2026-06-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "q21zruzxyo",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-25",
+    "at": "2026-06-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h2qyekjb6n",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-26",
+    "at": "2026-06-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "u4rm4x27i7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-27",
+    "at": "2026-06-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zj0mz82nw0",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-28",
+    "at": "2026-06-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "pdugjbgrlz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-29",
+    "at": "2026-06-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "11mo3afrat",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-06-30",
+    "at": "2026-06-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "k5mdpolgn6",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-07-23",
+    "at": "2026-07-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4lkqi57xld",
+    "type": "out",
+    "category": "zakat",
+    "amount": 250.0,
+    "description": "Zakat",
+    "date": "2026-07-21",
+    "at": "2026-07-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0hmwlf5gyt",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-07-23",
+    "at": "2026-07-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dqx1lts7vl",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-07-06",
+    "at": "2026-07-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ecncv7njj7",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-07-13",
+    "at": "2026-07-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9lt3vwitwo",
+    "type": "out",
+    "category": "education",
+    "amount": 400.0,
+    "description": "Education",
+    "date": "2026-07-20",
+    "at": "2026-07-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4fubxtovzg",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-07-01",
+    "at": "2026-07-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "47jeussr76",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-07-03",
+    "at": "2026-07-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9gk5hgky0h",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-07-05",
+    "at": "2026-07-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8ogfc91pll",
+    "type": "out",
+    "category": "loan",
+    "amount": 100.0,
+    "description": "Loan",
+    "date": "2026-07-29",
+    "at": "2026-07-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bol5pkoc94",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-07-05",
+    "at": "2026-07-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g7e014v1dn",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-07-06",
+    "at": "2026-07-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z03ppr5lv7",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-07-07",
+    "at": "2026-07-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gi6y8z3p9r",
+    "type": "out",
+    "category": "bill",
+    "amount": 76.55,
+    "description": "Bill",
+    "date": "2026-07-08",
+    "at": "2026-07-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9icnnnso8q",
+    "type": "out",
+    "category": "bill",
+    "amount": 290.15,
+    "description": "Bill",
+    "date": "2026-07-09",
+    "at": "2026-07-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "914v188dbh",
+    "type": "out",
+    "category": "bill",
+    "amount": 30.4,
+    "description": "Bill",
+    "date": "2026-07-10",
+    "at": "2026-07-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g5v7xi9g2h",
+    "type": "out",
+    "category": "bill",
+    "amount": 12.35,
+    "description": "Bill",
+    "date": "2026-07-11",
+    "at": "2026-07-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lc2z1bn2ip",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-07-24",
+    "at": "2026-07-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bdoj8jeigv",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-07-26",
+    "at": "2026-07-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bbvqca0ns5",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-01",
+    "at": "2026-07-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h4zucu1hbv",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-02",
+    "at": "2026-07-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g8vwcih08i",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-03",
+    "at": "2026-07-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rzdxf8s5o1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-04",
+    "at": "2026-07-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "v8a1irbzxp",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-05",
+    "at": "2026-07-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jojyw0u7pz",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-06",
+    "at": "2026-07-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5c22vi9cl1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-07",
+    "at": "2026-07-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z9dnpyd2a7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-08",
+    "at": "2026-07-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "e3b5mj7lal",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-09",
+    "at": "2026-07-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xa0r2dtkpg",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-10",
+    "at": "2026-07-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "i3oepm59ns",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-11",
+    "at": "2026-07-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s6bxi40bdf",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-12",
+    "at": "2026-07-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zd4riqfger",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-13",
+    "at": "2026-07-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0hc37heu3g",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-14",
+    "at": "2026-07-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jbv3urnk4b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-15",
+    "at": "2026-07-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c08ngk1qk8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-16",
+    "at": "2026-07-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8jme5xntpp",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-17",
+    "at": "2026-07-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g6vhp1bsm6",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-18",
+    "at": "2026-07-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1ly69i523d",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-19",
+    "at": "2026-07-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "28i7u2zt8v",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-20",
+    "at": "2026-07-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "er4ga2zn2k",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-21",
+    "at": "2026-07-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6r2hf0jh0f",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-22",
+    "at": "2026-07-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8w6bunsr7r",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-23",
+    "at": "2026-07-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lhv0ikavqq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-24",
+    "at": "2026-07-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nabkaqb8mm",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-25",
+    "at": "2026-07-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "no8l65qsh6",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-26",
+    "at": "2026-07-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6wqufdia01",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-27",
+    "at": "2026-07-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6zgq0feznn",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-28",
+    "at": "2026-07-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hv6od6etin",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-29",
+    "at": "2026-07-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j4mnasfdzw",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-30",
+    "at": "2026-07-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1slsj2emeo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-07-31",
+    "at": "2026-07-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4bqfjedoct",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-01",
+    "at": "2026-07-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d0civuc87y",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-02",
+    "at": "2026-07-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kwx2gop0o2",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-03",
+    "at": "2026-07-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jcumq0q9kb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-04",
+    "at": "2026-07-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hzhvsovcsu",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-05",
+    "at": "2026-07-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fdfqcselnb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-06",
+    "at": "2026-07-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xqv8ol1fqj",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-07",
+    "at": "2026-07-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ahen5m9rar",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-08",
+    "at": "2026-07-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gsh1vmoz4w",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-09",
+    "at": "2026-07-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j2c9k94or8",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-10",
+    "at": "2026-07-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8keo5rnooy",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-11",
+    "at": "2026-07-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mostvq7tjb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-12",
+    "at": "2026-07-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tndjyldf3i",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-13",
+    "at": "2026-07-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "uw9o11r4x3",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-14",
+    "at": "2026-07-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p4vcajupab",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-15",
+    "at": "2026-07-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "aj6gps24q1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-16",
+    "at": "2026-07-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dkggsu2l7j",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-17",
+    "at": "2026-07-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "150sdrb95n",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-18",
+    "at": "2026-07-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6kqakstmxl",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-19",
+    "at": "2026-07-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lb3w6bkhcy",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-20",
+    "at": "2026-07-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "r1fs0vddg8",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-21",
+    "at": "2026-07-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xxlmab4nob",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-22",
+    "at": "2026-07-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "u3u94vzq7q",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-23",
+    "at": "2026-07-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1rp6p63sn4",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-24",
+    "at": "2026-07-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4tvmpifxl9",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-25",
+    "at": "2026-07-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qi0ok5z9iw",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-26",
+    "at": "2026-07-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jxfgdbdjrd",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-27",
+    "at": "2026-07-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j9a9vdiw9m",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-28",
+    "at": "2026-07-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bxhwpza4fm",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-29",
+    "at": "2026-07-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ts0y851fss",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-30",
+    "at": "2026-07-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fn9f3h6dfd",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-07-31",
+    "at": "2026-07-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dtgtrh108w",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-08-23",
+    "at": "2026-08-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lm171aah5f",
+    "type": "out",
+    "category": "zakat",
+    "amount": 207.83,
+    "description": "Zakat",
+    "date": "2026-08-09",
+    "at": "2026-08-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "226gqcvtd7",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-08-23",
+    "at": "2026-08-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8z4fvzn8mc",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-08-03",
+    "at": "2026-08-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1086yevdk9",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-08-10",
+    "at": "2026-08-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9syvi8vgrh",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-08-17",
+    "at": "2026-08-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ntb6798icu",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-08-24",
+    "at": "2026-08-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wiyddrrw59",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-08-31",
+    "at": "2026-08-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ofe0vx87ea",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-08-01",
+    "at": "2026-08-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7a76ywsfir",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-08-03",
+    "at": "2026-08-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0v71xsfnjm",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-08-05",
+    "at": "2026-08-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c5tdrejnsv",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-08-03",
+    "at": "2026-08-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "th0qxnt9m7",
+    "type": "out",
+    "category": "bill",
+    "amount": 285.85,
+    "description": "Bill",
+    "date": "2026-08-04",
+    "at": "2026-08-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tt0gkj3bim",
+    "type": "out",
+    "category": "bill",
+    "amount": 369.9,
+    "description": "Bill",
+    "date": "2026-08-05",
+    "at": "2026-08-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nc2i27saiv",
+    "type": "out",
+    "category": "bill",
+    "amount": 143.2,
+    "description": "Bill",
+    "date": "2026-08-06",
+    "at": "2026-08-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9xjsmgr0l2",
+    "type": "out",
+    "category": "bill",
+    "amount": 7.5,
+    "description": "Bill",
+    "date": "2026-08-07",
+    "at": "2026-08-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zvccc1q4k0",
+    "type": "out",
+    "category": "bill",
+    "amount": 25.7,
+    "description": "Bill",
+    "date": "2026-08-08",
+    "at": "2026-08-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "izes4wgyr6",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-08-09",
+    "at": "2026-08-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yr2z48offo",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-08-10",
+    "at": "2026-08-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "udi0j465sh",
+    "type": "out",
+    "category": "bill",
+    "amount": 360.0,
+    "description": "Bill",
+    "date": "2026-08-11",
+    "at": "2026-08-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1gktbpy4xo",
+    "type": "out",
+    "category": "bill",
+    "amount": 115.0,
+    "description": "Bill",
+    "date": "2026-08-12",
+    "at": "2026-08-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yd3df3ronp",
+    "type": "out",
+    "category": "bill",
+    "amount": 270.0,
+    "description": "Bill",
+    "date": "2026-08-13",
+    "at": "2026-08-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s0p2r5m3eu",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-08-24",
+    "at": "2026-08-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lf59y1gpzn",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-08-26",
+    "at": "2026-08-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "krz5467m2z",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Petrol",
+    "date": "2026-08-11",
+    "at": "2026-08-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jm1h8kwgrk",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Tol",
+    "date": "2026-08-11",
+    "at": "2026-08-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yc4lxvbyna",
+    "type": "out",
+    "category": "sinking",
+    "amount": 10.0,
+    "description": "Sinking Fund",
+    "date": "2026-08-18",
+    "at": "2026-08-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8d0uuz3ttf",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-01",
+    "at": "2026-08-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p07dvoytpa",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-02",
+    "at": "2026-08-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xlnqxyrmoq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-03",
+    "at": "2026-08-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j2318dvtqa",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-04",
+    "at": "2026-08-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nb7ju7zkuk",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-05",
+    "at": "2026-08-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0gojsyv0qq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-06",
+    "at": "2026-08-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d2h89mgkg5",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-07",
+    "at": "2026-08-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2esswx0jxr",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-08",
+    "at": "2026-08-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "x7f5ztu5d9",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-09",
+    "at": "2026-08-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rnfm237cyh",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-10",
+    "at": "2026-08-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "it9e6zpn74",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-11",
+    "at": "2026-08-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "x2fx8g2pn5",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-12",
+    "at": "2026-08-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "aj26ttso0k",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-13",
+    "at": "2026-08-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "amnadrm1e6",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-14",
+    "at": "2026-08-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "t59bym5osk",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-15",
+    "at": "2026-08-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f5qvkriwdx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-16",
+    "at": "2026-08-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nehkjdi1r9",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-17",
+    "at": "2026-08-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c62axkhqaf",
+    "type": "out",
+    "category": "donation",
+    "amount": 20.0,
+    "description": "Donation",
+    "date": "2026-08-18",
+    "at": "2026-08-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ksp7ihatjj",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-19",
+    "at": "2026-08-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ygj3y8j7s1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-20",
+    "at": "2026-08-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1ytn9bgt9c",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-21",
+    "at": "2026-08-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vzsdhmm6us",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-22",
+    "at": "2026-08-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tte750gkx6",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-23",
+    "at": "2026-08-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "96hww86mio",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-24",
+    "at": "2026-08-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "siok8we28e",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-25",
+    "at": "2026-08-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tjxl0qkcch",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-26",
+    "at": "2026-08-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ew6hh9bo3y",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-27",
+    "at": "2026-08-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "43eif4euuy",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-28",
+    "at": "2026-08-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ycvm1y9x2r",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-29",
+    "at": "2026-08-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "oyy3fr33d0",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-30",
+    "at": "2026-08-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fhoh9qjahy",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-08-31",
+    "at": "2026-08-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1us3w4esii",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-01",
+    "at": "2026-08-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dluqwmlseg",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-02",
+    "at": "2026-08-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lqr58iwpgg",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-03",
+    "at": "2026-08-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8gi7qzwdya",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-04",
+    "at": "2026-08-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yp9hja01nk",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-05",
+    "at": "2026-08-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "i1foa1ycqo",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-06",
+    "at": "2026-08-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bcv7d2r6ou",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-07",
+    "at": "2026-08-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "pclfom75wg",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-08",
+    "at": "2026-08-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qohkmjsxh1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-09",
+    "at": "2026-08-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ut4zfyl97i",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-10",
+    "at": "2026-08-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "694bka11lv",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-11",
+    "at": "2026-08-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "70a3zveeb6",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-12",
+    "at": "2026-08-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vxlmikj1wx",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-13",
+    "at": "2026-08-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "py90ol96fy",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-14",
+    "at": "2026-08-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1km4ckmm6s",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-15",
+    "at": "2026-08-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "m44ea843sq",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-16",
+    "at": "2026-08-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "b0krptg5ir",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-17",
+    "at": "2026-08-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tzs1w5zhb3",
+    "type": "out",
+    "category": "food",
+    "amount": 30.0,
+    "description": "Food",
+    "date": "2026-08-18",
+    "at": "2026-08-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ble1p5esjl",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-19",
+    "at": "2026-08-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4ovgpav8ur",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-20",
+    "at": "2026-08-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fmlf06gqce",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-21",
+    "at": "2026-08-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ls86ftfg7r",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-22",
+    "at": "2026-08-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "x21hsoavik",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-23",
+    "at": "2026-08-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p6i5e57wou",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-24",
+    "at": "2026-08-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lhd5a2v2v6",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-25",
+    "at": "2026-08-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "opd36tw9e6",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-26",
+    "at": "2026-08-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "amtq4n9kji",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-27",
+    "at": "2026-08-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sof0r70iua",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-28",
+    "at": "2026-08-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8eykcznnec",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-29",
+    "at": "2026-08-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "per6cq7yec",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-30",
+    "at": "2026-08-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sh3a0gtos2",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-08-31",
+    "at": "2026-08-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0fi0qn65uc",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-09-23",
+    "at": "2026-09-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "uie51yk3lv",
+    "type": "out",
+    "category": "zakat",
+    "amount": 207.83,
+    "description": "Zakat",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yb68agzymg",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-09-23",
+    "at": "2026-09-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ovbrss6gc5",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-09-07",
+    "at": "2026-09-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ee8a0y0lp4",
+    "type": "out",
+    "category": "education",
+    "amount": 700.0,
+    "description": "Education",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "iwpy3z4642",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-09-14",
+    "at": "2026-09-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0gwtlubgvw",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-09-21",
+    "at": "2026-09-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yklduql9iw",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-09-28",
+    "at": "2026-09-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fgr86zq7pw",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-09-01",
+    "at": "2026-09-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dkyxof7iaa",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-09-03",
+    "at": "2026-09-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s7a4k18g28",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-09-05",
+    "at": "2026-09-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wxd5qpk6bz",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-09-03",
+    "at": "2026-09-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zu6ik6j6fs",
+    "type": "out",
+    "category": "bill",
+    "amount": 285.85,
+    "description": "Bill",
+    "date": "2026-09-04",
+    "at": "2026-09-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9xry93y80j",
+    "type": "out",
+    "category": "bill",
+    "amount": 369.9,
+    "description": "Bill",
+    "date": "2026-09-05",
+    "at": "2026-09-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ug4x0mvf20",
+    "type": "out",
+    "category": "bill",
+    "amount": 28.0,
+    "description": "Bill",
+    "date": "2026-09-06",
+    "at": "2026-09-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yvxzjywr06",
+    "type": "out",
+    "category": "bill",
+    "amount": 17.85,
+    "description": "Bill",
+    "date": "2026-09-07",
+    "at": "2026-09-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zqfjad6cjm",
+    "type": "out",
+    "category": "bill",
+    "amount": 34.23,
+    "description": "Bill",
+    "date": "2026-09-08",
+    "at": "2026-09-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "17ff0e3un2",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-09-09",
+    "at": "2026-09-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tjv5uwr66k",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-09-10",
+    "at": "2026-09-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hll55vn6vz",
+    "type": "out",
+    "category": "bill",
+    "amount": 360.0,
+    "description": "Bill",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "re005vv4xy",
+    "type": "out",
+    "category": "bill",
+    "amount": 125.0,
+    "description": "Bill",
+    "date": "2026-09-13",
+    "at": "2026-09-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "e95cqa5x48",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-09-24",
+    "at": "2026-09-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wka6g7cw0b",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-09-26",
+    "at": "2026-09-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xk64l1dr5q",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Petrol",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ms2onvybac",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Tol",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3s2zlv8cuv",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-01",
+    "at": "2026-09-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ii8oxs4ub4",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-02",
+    "at": "2026-09-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "20jrw0z8vn",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-03",
+    "at": "2026-09-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dkvpmpn2wd",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-04",
+    "at": "2026-09-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jpsqic00pu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-05",
+    "at": "2026-09-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ibuyu8g1ha",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-06",
+    "at": "2026-09-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sbqtof97nv",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-07",
+    "at": "2026-09-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2dn5frpi26",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-08",
+    "at": "2026-09-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6zfusgkb2z",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-09",
+    "at": "2026-09-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dmt1icbt8o",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-10",
+    "at": "2026-09-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "iiisuqh4vd",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hf39csuivt",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-12",
+    "at": "2026-09-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "812xupt9q9",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-13",
+    "at": "2026-09-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4jmztpitte",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-14",
+    "at": "2026-09-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ed0s1okbhd",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-15",
+    "at": "2026-09-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "73dtchpmqu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-16",
+    "at": "2026-09-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8ktv1wktdh",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-17",
+    "at": "2026-09-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mz6qdwdx55",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-18",
+    "at": "2026-09-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1v0irm3yez",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-19",
+    "at": "2026-09-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "osctypzc66",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-20",
+    "at": "2026-09-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1llw17plya",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-21",
+    "at": "2026-09-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "03myaaf69e",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-22",
+    "at": "2026-09-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nzsz96c9ab",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-23",
+    "at": "2026-09-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0g9mvttvev",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-24",
+    "at": "2026-09-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p5s1pzwzyt",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-25",
+    "at": "2026-09-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "w1hrj3pubm",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-26",
+    "at": "2026-09-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ovyujl1j9v",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-27",
+    "at": "2026-09-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y4sxmov2hn",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-28",
+    "at": "2026-09-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p4wtdatqwh",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-29",
+    "at": "2026-09-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "njd76oyp46",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-09-30",
+    "at": "2026-09-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xt0zowbvmb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-01",
+    "at": "2026-09-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9ftw3e09y5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-02",
+    "at": "2026-09-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j8tdsn6v12",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-03",
+    "at": "2026-09-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "upe43u02zc",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-04",
+    "at": "2026-09-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9orwd2pujr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-05",
+    "at": "2026-09-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rm5xpk9udl",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-06",
+    "at": "2026-09-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jis06u9v4b",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-07",
+    "at": "2026-09-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6hygslllob",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-08",
+    "at": "2026-09-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2qyq430d53",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-09",
+    "at": "2026-09-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "apz32rmrzt",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-10",
+    "at": "2026-09-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nv6nlf30tj",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-11",
+    "at": "2026-09-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yb6bowcoeg",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-12",
+    "at": "2026-09-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "coh4muwso4",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-13",
+    "at": "2026-09-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "klu8s4w4j0",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-14",
+    "at": "2026-09-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "i5mrda0e99",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-15",
+    "at": "2026-09-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vrbddx0je3",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-16",
+    "at": "2026-09-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qkyut8snv1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-17",
+    "at": "2026-09-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nkavbhw23p",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-18",
+    "at": "2026-09-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "snsbo4wf5c",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-19",
+    "at": "2026-09-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wibn42ac4n",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-20",
+    "at": "2026-09-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bjk260tc6x",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-21",
+    "at": "2026-09-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4j4sxwelu7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-22",
+    "at": "2026-09-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j3t9fxer7z",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-23",
+    "at": "2026-09-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zd0md9cpfe",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-24",
+    "at": "2026-09-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bvxy4uny6e",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-25",
+    "at": "2026-09-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9asygdqqzo",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-26",
+    "at": "2026-09-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "p18zsw9m6n",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-27",
+    "at": "2026-09-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "r2e5kfh27i",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-28",
+    "at": "2026-09-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zd0hn0u8zq",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-29",
+    "at": "2026-09-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "npm7o3ly2x",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-09-30",
+    "at": "2026-09-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c8di259xza",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-10-23",
+    "at": "2026-10-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "m91gy7nqgt",
+    "type": "out",
+    "category": "zakat",
+    "amount": 275.0,
+    "description": "Zakat",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mlhrzdiuax",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-10-23",
+    "at": "2026-10-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "t6bqwf3zvr",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-10-04",
+    "at": "2026-10-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rpycdlolk7",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gmnxy4qh0z",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-10-18",
+    "at": "2026-10-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8fhqb5bn5n",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-10-25",
+    "at": "2026-10-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jxen960mj2",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-10-01",
+    "at": "2026-10-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zkf3uva7uh",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-10-06",
+    "at": "2026-10-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "bgmyz3diqz",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-10-08",
+    "at": "2026-10-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wi9857c2nq",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-10-06",
+    "at": "2026-10-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "19ezr8o2gc",
+    "type": "out",
+    "category": "bill",
+    "amount": 39.8,
+    "description": "Bill",
+    "date": "2026-10-10",
+    "at": "2026-10-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "m0ugedyx5j",
+    "type": "out",
+    "category": "bill",
+    "amount": 13.0,
+    "description": "Bill",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "iyhru8g6sj",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-10-12",
+    "at": "2026-10-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gfnme64mia",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-10-13",
+    "at": "2026-10-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4b48y3prdc",
+    "type": "out",
+    "category": "bill",
+    "amount": 125.0,
+    "description": "Bill",
+    "date": "2026-10-16",
+    "at": "2026-10-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cqpkd9ggpi",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-10-24",
+    "at": "2026-10-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "47560qg8ka",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-10-26",
+    "at": "2026-10-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zkx91qrthu",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Petrol",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f6dl6qe0cx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-01",
+    "at": "2026-10-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mwofgcre87",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-02",
+    "at": "2026-10-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h355nnrr40",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-03",
+    "at": "2026-10-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kz7rgr4gaf",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-04",
+    "at": "2026-10-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vcy8iw9puy",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-05",
+    "at": "2026-10-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y5y38uwc63",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-06",
+    "at": "2026-10-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ljortlh3hn",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-07",
+    "at": "2026-10-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "t6bhsd964b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-08",
+    "at": "2026-10-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8wa2ezkmzr",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-09",
+    "at": "2026-10-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2xcm87tvlf",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-10",
+    "at": "2026-10-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g2nucvz835",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vij9uigd55",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-12",
+    "at": "2026-10-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4eo46w8xk9",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-13",
+    "at": "2026-10-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kr5kzp778b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-14",
+    "at": "2026-10-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "clnl6iufdu",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-15",
+    "at": "2026-10-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hes8auhr1b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-16",
+    "at": "2026-10-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6w767lkph8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-17",
+    "at": "2026-10-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "494y237bct",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-18",
+    "at": "2026-10-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0lpvddv28k",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-19",
+    "at": "2026-10-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "trqrg06w1d",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-20",
+    "at": "2026-10-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "a4jmy4ti7a",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-21",
+    "at": "2026-10-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sxokdd3dlo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-22",
+    "at": "2026-10-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2oyzrx5rab",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-23",
+    "at": "2026-10-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6rlpsolyr8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-24",
+    "at": "2026-10-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hn1y46ad33",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-25",
+    "at": "2026-10-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ob6gqn4bs3",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-26",
+    "at": "2026-10-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3dkg12dtjx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-27",
+    "at": "2026-10-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "n3lcfcoqjq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-28",
+    "at": "2026-10-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7efqnlv6zm",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-29",
+    "at": "2026-10-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6khju4l4ci",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-30",
+    "at": "2026-10-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "uyckrv2p2o",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-10-31",
+    "at": "2026-10-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "sh87a55f9a",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-01",
+    "at": "2026-10-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "48msgqevy1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-02",
+    "at": "2026-10-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5us953b0o2",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-03",
+    "at": "2026-10-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gyop76qa4x",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-04",
+    "at": "2026-10-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gqdn8ylank",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-05",
+    "at": "2026-10-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "u2ifd93xdi",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-06",
+    "at": "2026-10-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "eu1hk8ue0c",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-07",
+    "at": "2026-10-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jizzbwziaf",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-08",
+    "at": "2026-10-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1nvw03z06v",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-09",
+    "at": "2026-10-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d5kqd6qdgx",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-10",
+    "at": "2026-10-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h42jh8nyqu",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-11",
+    "at": "2026-10-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "y47upqzmnp",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-12",
+    "at": "2026-10-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "k0os53w773",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-13",
+    "at": "2026-10-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cu670qbqoh",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-14",
+    "at": "2026-10-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gviw7mgeyr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-15",
+    "at": "2026-10-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8kxdf0hjcr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-16",
+    "at": "2026-10-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9uq9eied73",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-17",
+    "at": "2026-10-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nge7j9tb6l",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-18",
+    "at": "2026-10-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vcny3dlmem",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-19",
+    "at": "2026-10-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9tvtf24h9i",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-20",
+    "at": "2026-10-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ght8vh9cbr",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-21",
+    "at": "2026-10-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0mh281h75q",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-22",
+    "at": "2026-10-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kcprtvtbnt",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-23",
+    "at": "2026-10-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h31806vq5s",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-24",
+    "at": "2026-10-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1ejnuo2303",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-25",
+    "at": "2026-10-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "75tjtq1ryw",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-26",
+    "at": "2026-10-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "19e9cbpyq7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-27",
+    "at": "2026-10-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kwazo2nfm2",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-28",
+    "at": "2026-10-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "w3krbt94cm",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-29",
+    "at": "2026-10-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tkrktn9qio",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-30",
+    "at": "2026-10-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4icagi0mxq",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-10-31",
+    "at": "2026-10-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1qsjzwxpi8",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-11-23",
+    "at": "2026-11-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7d1vzqun7y",
+    "type": "out",
+    "category": "zakat",
+    "amount": 269.15,
+    "description": "Zakat",
+    "date": "2026-11-17",
+    "at": "2026-11-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gskmbov0lq",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-11-23",
+    "at": "2026-11-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "l1cik0vf3l",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-11-01",
+    "at": "2026-11-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ygx3cfr91t",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-11-08",
+    "at": "2026-11-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mqk61emdvi",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-11-15",
+    "at": "2026-11-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "av1hkkyggo",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-11-22",
+    "at": "2026-11-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9zfi5z6kc1",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-11-29",
+    "at": "2026-11-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wgsdvipaut",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-11-01",
+    "at": "2026-11-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tfbujzde9s",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-11-06",
+    "at": "2026-11-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4bz0t3sa48",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-11-08",
+    "at": "2026-11-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vgliyndl04",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-11-06",
+    "at": "2026-11-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "iijy48iyyg",
+    "type": "out",
+    "category": "bill",
+    "amount": 39.8,
+    "description": "Bill",
+    "date": "2026-11-10",
+    "at": "2026-11-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "21hgu7dz6h",
+    "type": "out",
+    "category": "bill",
+    "amount": 13.0,
+    "description": "Bill",
+    "date": "2026-11-11",
+    "at": "2026-11-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dssgyu64xo",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-11-12",
+    "at": "2026-11-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "gu4mr7v7w5",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-11-13",
+    "at": "2026-11-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "am9bazcb3o",
+    "type": "out",
+    "category": "bill",
+    "amount": 360.0,
+    "description": "Bill",
+    "date": "2026-11-14",
+    "at": "2026-11-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "33yx4im603",
+    "type": "out",
+    "category": "bill",
+    "amount": 125.0,
+    "description": "Bill",
+    "date": "2026-11-16",
+    "at": "2026-11-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "iklgyvrgob",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-11-24",
+    "at": "2026-11-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "avxg32h850",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-11-26",
+    "at": "2026-11-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lfy479fxvc",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Petrol",
+    "date": "2026-11-11",
+    "at": "2026-11-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2eg5ocjouk",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-01",
+    "at": "2026-11-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "a69jqhgvn7",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-02",
+    "at": "2026-11-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rpcj72bbw8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-03",
+    "at": "2026-11-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "lblrwt91pm",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-04",
+    "at": "2026-11-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "v3ehawibbq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-05",
+    "at": "2026-11-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "uw1q06d6ae",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-06",
+    "at": "2026-11-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "b0ofnsri9b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-07",
+    "at": "2026-11-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "52uzsw4zfi",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-08",
+    "at": "2026-11-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "q30pwycyv8",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-09",
+    "at": "2026-11-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "drk81ke6d1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-10",
+    "at": "2026-11-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xwawlrcf13",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-11",
+    "at": "2026-11-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "07j1a2otnw",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-12",
+    "at": "2026-11-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "u2cdum008b",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-13",
+    "at": "2026-11-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "l7hfaxht73",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-14",
+    "at": "2026-11-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1xy1tdnu8p",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-15",
+    "at": "2026-11-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hhv3bprmte",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-16",
+    "at": "2026-11-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ok8b4rv6zc",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-17",
+    "at": "2026-11-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s3mvfis2kw",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-18",
+    "at": "2026-11-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "u4ej8be1xb",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-19",
+    "at": "2026-11-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vtlw8wgtnx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-20",
+    "at": "2026-11-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9w5cgxntep",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-21",
+    "at": "2026-11-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zbrzqsvoby",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-22",
+    "at": "2026-11-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9gl2wn9nss",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-23",
+    "at": "2026-11-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "as843j5t9m",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-24",
+    "at": "2026-11-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d4pgcrfi7p",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-25",
+    "at": "2026-11-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "hvrqlfj7yo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-26",
+    "at": "2026-11-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dpffqtaiha",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-27",
+    "at": "2026-11-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7psvqptb24",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-28",
+    "at": "2026-11-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z7stc3ougo",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-29",
+    "at": "2026-11-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vxlmawx31r",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-11-30",
+    "at": "2026-11-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9eb0qbpnjt",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-01",
+    "at": "2026-11-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9564fntnt9",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-02",
+    "at": "2026-11-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g9f71c4d6k",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-03",
+    "at": "2026-11-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8fufymmj58",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-04",
+    "at": "2026-11-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "4l1p1btmmb",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-05",
+    "at": "2026-11-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "k6x3t5s9eo",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-06",
+    "at": "2026-11-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "47x6ksbg9h",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-07",
+    "at": "2026-11-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yfnmnoxql1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-08",
+    "at": "2026-11-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "grfp14kndv",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-09",
+    "at": "2026-11-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s9goaalsug",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-10",
+    "at": "2026-11-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5g01tcgpf7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-11",
+    "at": "2026-11-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ipwe4l9zjo",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-12",
+    "at": "2026-11-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "cvsc94xvj7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-13",
+    "at": "2026-11-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "nz055v3fcn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-14",
+    "at": "2026-11-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "00w1hafr1b",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-15",
+    "at": "2026-11-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zn6cqcd5uk",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-16",
+    "at": "2026-11-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xy1c1iddyl",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-17",
+    "at": "2026-11-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5j3o97ncpc",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-18",
+    "at": "2026-11-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "yk5vuhdfih",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-19",
+    "at": "2026-11-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7c1f8cifuz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-20",
+    "at": "2026-11-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vrsevlgcyi",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-21",
+    "at": "2026-11-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ilspysogj7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-22",
+    "at": "2026-11-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5e9sj9sigv",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-23",
+    "at": "2026-11-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1eyg8ufrrh",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-24",
+    "at": "2026-11-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tlnti9sldz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-25",
+    "at": "2026-11-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7d3nss07xa",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-26",
+    "at": "2026-11-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mk1qqtetj7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-27",
+    "at": "2026-11-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5q66jam7h5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-28",
+    "at": "2026-11-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "85ygupo42k",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-29",
+    "at": "2026-11-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "23fxstspu5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-11-30",
+    "at": "2026-11-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "akub28o8a2",
+    "type": "out",
+    "category": "saving",
+    "amount": 100.0,
+    "description": "Saving",
+    "date": "2026-12-23",
+    "at": "2026-12-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zwdrlmbik4",
+    "type": "out",
+    "category": "zakat",
+    "amount": 181.16,
+    "description": "Zakat",
+    "date": "2026-12-11",
+    "at": "2026-12-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5y6omrkfmu",
+    "type": "out",
+    "category": "nafkah",
+    "amount": 7000.0,
+    "description": "Nafkah",
+    "date": "2026-12-23",
+    "at": "2026-12-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "92ay76kzma",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-12-01",
+    "at": "2026-12-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "s1gmzyyi8m",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-12-08",
+    "at": "2026-12-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "uelcogr24s",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-12-15",
+    "at": "2026-12-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8kaw7d9lq5",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-12-22",
+    "at": "2026-12-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tbhhvou69r",
+    "type": "out",
+    "category": "education",
+    "amount": 200.0,
+    "description": "Education",
+    "date": "2026-12-29",
+    "at": "2026-12-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "880d2gflvx",
+    "type": "out",
+    "category": "loan",
+    "amount": 2751.0,
+    "description": "Loan",
+    "date": "2026-12-01",
+    "at": "2026-12-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "x011q7nbou",
+    "type": "out",
+    "category": "loan",
+    "amount": 3114.0,
+    "description": "Loan",
+    "date": "2026-12-06",
+    "at": "2026-12-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "6dru1nvelg",
+    "type": "out",
+    "category": "loan",
+    "amount": 3310.0,
+    "description": "Loan",
+    "date": "2026-12-08",
+    "at": "2026-12-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "3am1ugjqx0",
+    "type": "out",
+    "category": "bill",
+    "amount": 383.67,
+    "description": "Bill",
+    "date": "2026-12-06",
+    "at": "2026-12-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qvjvtru1kt",
+    "type": "out",
+    "category": "bill",
+    "amount": 39.8,
+    "description": "Bill",
+    "date": "2026-12-10",
+    "at": "2026-12-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "t7e8kpvzrs",
+    "type": "out",
+    "category": "bill",
+    "amount": 13.0,
+    "description": "Bill",
+    "date": "2026-12-11",
+    "at": "2026-12-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f8al8vl3di",
+    "type": "out",
+    "category": "bill",
+    "amount": 189.75,
+    "description": "Bill",
+    "date": "2026-12-12",
+    "at": "2026-12-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mgqjufxck3",
+    "type": "out",
+    "category": "bill",
+    "amount": 168.55,
+    "description": "Bill",
+    "date": "2026-12-13",
+    "at": "2026-12-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tzflfpsnth",
+    "type": "out",
+    "category": "bill",
+    "amount": 360.0,
+    "description": "Bill",
+    "date": "2026-12-14",
+    "at": "2026-12-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rztogyx99n",
+    "type": "out",
+    "category": "bill",
+    "amount": 125.0,
+    "description": "Bill",
+    "date": "2026-12-16",
+    "at": "2026-12-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "fcxqnjdsgo",
+    "type": "out",
+    "category": "bill",
+    "amount": 381.81,
+    "description": "Bill",
+    "date": "2026-12-24",
+    "at": "2026-12-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1vfqj0r09k",
+    "type": "out",
+    "category": "bill",
+    "amount": 500.0,
+    "description": "Bill",
+    "date": "2026-12-26",
+    "at": "2026-12-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "j9sfwwbjvm",
+    "type": "out",
+    "category": "travel",
+    "amount": 1000.0,
+    "description": "Petrol",
+    "date": "2026-12-11",
+    "at": "2026-12-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vweptccxc3",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-01",
+    "at": "2026-12-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ij8tifry9s",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-02",
+    "at": "2026-12-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "a6oq64vaig",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-03",
+    "at": "2026-12-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dxxyl7st2d",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-04",
+    "at": "2026-12-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "v0yw73tuwa",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-05",
+    "at": "2026-12-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "9nr3klqjl1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-06",
+    "at": "2026-12-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "qrwf8wfv9j",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-07",
+    "at": "2026-12-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "2b68tg4zma",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-08",
+    "at": "2026-12-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mcr2l75y7s",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-09",
+    "at": "2026-12-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "68wurw5jhx",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-10",
+    "at": "2026-12-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xgv2m4inam",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-11",
+    "at": "2026-12-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ko8fmy2pqp",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-12",
+    "at": "2026-12-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jk0mwnvsv6",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-13",
+    "at": "2026-12-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "38pepo5veq",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-14",
+    "at": "2026-12-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "h2avcp5v46",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-15",
+    "at": "2026-12-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zd0i61r42z",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-16",
+    "at": "2026-12-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "i3rbk3xg5g",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-17",
+    "at": "2026-12-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "64nxxdjq2w",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-18",
+    "at": "2026-12-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "73skedncu1",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-19",
+    "at": "2026-12-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "7p39nqqyfh",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-20",
+    "at": "2026-12-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "opr0j3q256",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-21",
+    "at": "2026-12-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jmxbhfvh7c",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-22",
+    "at": "2026-12-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "g28sg6i529",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-23",
+    "at": "2026-12-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f80d3kdxal",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-24",
+    "at": "2026-12-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "60k1smnh5n",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-25",
+    "at": "2026-12-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "l9wjegc8bd",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-26",
+    "at": "2026-12-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "clydpankc5",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-27",
+    "at": "2026-12-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "eshbrxox03",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-28",
+    "at": "2026-12-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "87ywnod61c",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-29",
+    "at": "2026-12-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xp3qqwmfvj",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-30",
+    "at": "2026-12-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "dyorvh8ptc",
+    "type": "out",
+    "category": "donation",
+    "amount": 10.0,
+    "description": "Donation",
+    "date": "2026-12-31",
+    "at": "2026-12-31T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "mwvcb5y1m2",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-01",
+    "at": "2026-12-01T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "kyuv0bfzkz",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-02",
+    "at": "2026-12-02T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "f18sv8x05t",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-03",
+    "at": "2026-12-03T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "n5kr2ag22r",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-04",
+    "at": "2026-12-04T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "grmh2jehwk",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-05",
+    "at": "2026-12-05T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "e3eu4os5nw",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-06",
+    "at": "2026-12-06T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "1ovzuav0dq",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-07",
+    "at": "2026-12-07T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "eaekcq1yy7",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-08",
+    "at": "2026-12-08T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "jhp0rxl7wa",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-09",
+    "at": "2026-12-09T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "pcb5rvqxr1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-10",
+    "at": "2026-12-10T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "am2fegy2zc",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-11",
+    "at": "2026-12-11T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "wbg2odt9hn",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-12",
+    "at": "2026-12-12T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d7c6abv50l",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-13",
+    "at": "2026-12-13T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "0c1bn45ov5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-14",
+    "at": "2026-12-14T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "awf8yjmphi",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-15",
+    "at": "2026-12-15T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "091n16612t",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-16",
+    "at": "2026-12-16T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8t97ze30gk",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-17",
+    "at": "2026-12-17T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "zzlnkngcck",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-18",
+    "at": "2026-12-18T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "vzw4ctvn5v",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-19",
+    "at": "2026-12-19T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xg5ugf4kex",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-20",
+    "at": "2026-12-20T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "c83mpfpp74",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-21",
+    "at": "2026-12-21T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "5ejty4u2ap",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-22",
+    "at": "2026-12-22T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ezxjln1s1v",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-23",
+    "at": "2026-12-23T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "z3dmp01xag",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-24",
+    "at": "2026-12-24T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "xi8nnl1tbv",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-25",
+    "at": "2026-12-25T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "8mjsjpd9ts",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-26",
+    "at": "2026-12-26T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "52su1ixenc",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-27",
+    "at": "2026-12-27T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "tmra2oo9l8",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-28",
+    "at": "2026-12-28T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "ll8ltl9gfj",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-29",
+    "at": "2026-12-29T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "rh01b0foa5",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-30",
+    "at": "2026-12-30T00:00:00.000Z",
+    "plan": true
+  },
+  {
+    "id": "d6le17h9t1",
+    "type": "out",
+    "category": "food",
+    "amount": 20.0,
+    "description": "Food",
+    "date": "2026-12-31",
+    "at": "2026-12-31T00:00:00.000Z",
+    "plan": true
+  }
+]
