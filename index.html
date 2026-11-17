@@ -131,11 +131,11 @@
     }
     .nav-btn {
       flex: 1; display: flex; flex-direction: column;
-      align-items: center; gap: 3px; cursor: pointer;
-      color: var(--muted); font-size: 10px; font-weight: 500;
+      align-items: center; gap: 2px; cursor: pointer;
+      color: var(--muted); font-size: 9px; font-weight: 500;
       border: none; background: none; padding: 2px 0;
     }
-    .nav-btn .icon { font-size: 22px; line-height: 1; }
+    .nav-btn .icon { font-size: 20px; line-height: 1; }
     .nav-btn.active { color: var(--green); }
 
     /* ── Sheet (modal) ── */
@@ -182,7 +182,7 @@
     .fi:focus { outline: none; border-color: var(--green); background: var(--card); }
     .fi.error { border-color: #e74c3c; }
 
-    /* ── Type toggle (expense/income) ── */
+    /* ── Type toggle ── */
     .type-toggle { display: flex; gap: 8px; margin-bottom: 14px; }
     .type-btn {
       flex: 1; padding: 10px; border-radius: 12px;
@@ -204,8 +204,6 @@
     }
     .cat-btn .e { font-size: 22px; }
     .cat-btn.sel { border-color: var(--green); background: #f0faf4; color: var(--green); }
-
-    /* Income category grid */
     .cat-btn.sel-inc { border-color: var(--gold); background: #fdf8ec; color: #8a6a1a; }
 
     /* ── Buttons ── */
@@ -217,34 +215,30 @@
     .btn-primary { background: var(--green); color: #fff; }
     .btn-danger  { background: #fff0f0; color: #c0392b; font-size: 14px; }
 
-    /* ── Budget bar ── */
-    .bbar { height: 7px; background: var(--border); border-radius: 4px; margin-top: 10px; overflow: hidden; }
-    .bfill { height: 100%; border-radius: 4px; background: linear-gradient(90deg,#27ae60,var(--green)); transition: width .6s; }
-    .bfill.over { background: linear-gradient(90deg,#f39c12,#e74c3c); }
-    .btext { display: flex; justify-content: space-between; font-size: 11px; margin-top: 6px; opacity: .8; }
-
-    /* ── Category breakdown ── */
-    .cat-row {
-      display: flex; align-items: center;
-      padding: 9px 0; border-bottom: 1px solid var(--border);
+    /* ── Summary row ── */
+    .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 14px; }
+    .sum-tile {
+      background: var(--card); border-radius: 12px; padding: 13px 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
     }
-    .cat-row:last-child { border-bottom: none; }
-    .cr-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; margin-right: 10px; flex-shrink: 0; }
-    .cr-info { flex: 1; min-width: 0; }
-    .cr-name { font-size: 13px; font-weight: 500; }
-    .mb-wrap { height: 4px; background: var(--border); border-radius: 2px; margin-top: 4px; }
-    .mb { height: 100%; border-radius: 2px; }
-    .cr-amt { font-size: 13px; font-weight: 600; margin-left: 8px; }
+    .sum-lbl { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+    .sum-val { font-size: 18px; font-weight: 700; }
+    .sum-val.red { color: #c0392b; }
+    .sum-val.grn { color: var(--green); }
 
-    /* ── Monthly groups ── */
-    .grp-hdr {
-      display: flex; justify-content: space-between;
-      padding: 7px 14px 3px;
-      font-size: 11px; font-weight: 600;
-      color: var(--muted); text-transform: uppercase; letter-spacing: .4px;
+    /* ── Settings ── */
+    .s-sec { margin: 14px; }
+    .s-head { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px; }
+    .s-row {
+      background: var(--card); border-radius: 12px; padding: 13px 14px;
+      display: flex; align-items: center; margin-bottom: 7px;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06); cursor: pointer;
     }
+    .s-lbl { flex: 1; font-size: 14px; }
+    .s-val { font-size: 14px; color: var(--green); font-weight: 500; }
+    .chev  { color: #c7c7cc; margin-left: 5px; font-size: 13px; }
 
-    /* ── Monthly Grid ── */
+    /* ── Monthly / Budget Grid ── */
     .mon-grid-wrap {
       margin: 10px 14px;
       overflow-x: auto;
@@ -284,29 +278,8 @@
     .mon-tbl .day-col { min-width: 36px; }
     .in-amt  { color: #0d6e35; font-weight: 600; }
     .out-amt { color: #c0392b; }
-
-    /* ── Settings ── */
-    .s-sec { margin: 14px; }
-    .s-head { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px; }
-    .s-row {
-      background: var(--card); border-radius: 12px; padding: 13px 14px;
-      display: flex; align-items: center; margin-bottom: 7px;
-      box-shadow: 0 1px 3px rgba(0,0,0,.06); cursor: pointer;
-    }
-    .s-lbl { flex: 1; font-size: 14px; }
-    .s-val { font-size: 14px; color: var(--green); font-weight: 500; }
-    .chev  { color: #c7c7cc; margin-left: 5px; font-size: 13px; }
-
-    /* ── Summary row in settings ── */
-    .summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 14px; }
-    .sum-tile {
-      background: var(--card); border-radius: 12px; padding: 13px 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,.06);
-    }
-    .sum-lbl { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
-    .sum-val { font-size: 18px; font-weight: 700; }
-    .sum-val.red { color: #c0392b; }
-    .sum-val.grn { color: var(--green); }
+    .cell-tap { cursor: pointer; }
+    .cell-tap:active { background: rgba(26,110,60,.12) !important; }
   </style>
 </head>
 <body>
@@ -334,35 +307,52 @@
   <div class="card" style="padding:0 14px"><div id="day-list"></div></div>
 </div>
 
-<!-- ═══ MONTHLY ═══ -->
-<div class="tab-content" id="tab-monthly">
+<!-- ═══ BUDGET ═══ -->
+<div class="tab-content" id="tab-budget">
   <div class="nav-row">
-    <button class="arrow" onclick="changeMonth(-1)">‹</button>
-    <span class="nav-label" id="mon-lbl"></span>
-    <button class="arrow" onclick="changeMonth(1)">›</button>
+    <button class="arrow" onclick="changeBudget(-1)">‹</button>
+    <span class="nav-label" id="bgt-lbl"></span>
+    <button class="arrow" onclick="changeBudget(1)">›</button>
   </div>
   <div style="display:flex;justify-content:flex-end;padding:4px 14px 0">
     <button onclick="copyMonth()" style="font-size:11px;background:var(--green);color:#fff;border:none;border-radius:8px;padding:5px 11px;cursor:pointer;font-family:inherit">Copy → next month</button>
   </div>
   <div class="hero">
-    <div class="lbl">Total Out</div>
-    <div class="amt" id="mon-out">RM 0.00</div>
+    <div class="lbl">Planned Out</div>
+    <div class="amt" id="bgt-out">RM 0.00</div>
     <div class="row">
-      <div class="sub" id="mon-cnt">0 items</div>
-      <div class="sub gold" id="mon-budget-lbl"></div>
-    </div>
-    <div class="bbar" id="bbar" style="display:none"><div class="bfill" id="bfill"></div></div>
-    <div class="btext" id="btext" style="display:none">
-      <span id="bt-spent"></span><span id="bt-limit"></span>
+      <div class="sub" id="bgt-cnt">0 items</div>
+      <div class="sub gold" id="bgt-in-lbl"></div>
     </div>
   </div>
-
-  <div class="summary-grid" id="mon-summary-grid" style="display:none">
-    <div class="sum-tile"><div class="sum-lbl">Total In</div><div class="sum-val grn" id="ms-in">RM 0</div></div>
-    <div class="sum-tile"><div class="sum-lbl">Net</div><div class="sum-val" id="ms-net">RM 0</div></div>
+  <div class="summary-grid" id="bgt-summary-grid" style="display:none">
+    <div class="sum-tile"><div class="sum-lbl">Planned In</div><div class="sum-val grn" id="bs-in">RM 0</div></div>
+    <div class="sum-tile"><div class="sum-lbl">Net Plan</div><div class="sum-val" id="bs-net">RM 0</div></div>
   </div>
+  <p style="font-size:11px;color:var(--muted);text-align:center;padding:6px 0 2px">Tap any cell to edit planned amount</p>
+  <div id="bgt-grid"></div>
+</div>
 
-  <div id="mon-grid"></div>
+<!-- ═══ ACTUAL ═══ -->
+<div class="tab-content" id="tab-actual">
+  <div class="nav-row">
+    <button class="arrow" onclick="changeActual(-1)">‹</button>
+    <span class="nav-label" id="act-lbl"></span>
+    <button class="arrow" onclick="changeActual(1)">›</button>
+  </div>
+  <div class="hero">
+    <div class="lbl">Actual Out</div>
+    <div class="amt" id="act-out">RM 0.00</div>
+    <div class="row">
+      <div class="sub" id="act-cnt">0 items</div>
+      <div class="sub gold" id="act-var-lbl"></div>
+    </div>
+  </div>
+  <div class="summary-grid" id="act-summary-grid">
+    <div class="sum-tile"><div class="sum-lbl">Budgeted</div><div class="sum-val" id="as-bgt">RM 0</div></div>
+    <div class="sum-tile"><div class="sum-lbl">Variance</div><div class="sum-val" id="as-var">—</div></div>
+  </div>
+  <div id="act-grid"></div>
 </div>
 
 <!-- ═══ SETTINGS ═══ -->
@@ -378,14 +368,16 @@
   <div class="s-sec">
     <div class="s-head">Data</div>
     <div class="s-row" onclick="exportData()"><span class="s-lbl">Export JSON</span><span class="chev">›</span></div>
-    <div class="s-row" onclick="document.getElementById('import-file').click()"><span class="s-lbl">Import JSON (file)</span><span class="chev">›</span></div>
-    <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(this)">
+    <div class="s-row" onclick="document.getElementById('import-budget-file').click()"><span class="s-lbl">Import as Budget Plan</span><span class="chev">›</span></div>
+    <input type="file" id="import-budget-file" accept=".json" style="display:none" onchange="importData(this,true)">
+    <div class="s-row" onclick="document.getElementById('import-actual-file').click()"><span class="s-lbl">Import as Actual</span><span class="chev">›</span></div>
+    <input type="file" id="import-actual-file" accept=".json" style="display:none" onchange="importData(this,false)">
     <div class="s-row" onclick="openPaste()"><span class="s-lbl">Paste JSON</span><span class="chev">›</span></div>
     <div class="s-row" onclick="confirmClear()"><span class="s-lbl" style="color:#c0392b">Clear All Data</span><span class="chev">›</span></div>
   </div>
   <div class="s-sec">
     <div class="s-head">App</div>
-    <div class="s-row" style="cursor:default"><span class="s-lbl">AHH Expense Tracker</span><span class="s-val">v1.0</span></div>
+    <div class="s-row" style="cursor:default"><span class="s-lbl">AHH Expense Tracker</span><span class="s-val">v2.0</span></div>
     <p style="font-size:11px;color:var(--muted);text-align:center;padding:12px 0">
       Safari → Share → Add to Home Screen to install
     </p>
@@ -400,6 +392,13 @@
       <span class="sheet-title">Paste JSON</span>
       <button class="sheet-close" onclick="closePaste()">✕</button>
     </div>
+    <div class="fg" style="margin-bottom:8px">
+      <label class="fl">Import as</label>
+      <div style="display:flex;gap:8px">
+        <button id="paste-plan-btn" onclick="setPasteMode(true)" style="flex:1;padding:9px;border-radius:10px;border:2px solid var(--green);background:#f0faf4;color:var(--green);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer">Budget Plan</button>
+        <button id="paste-act-btn" onclick="setPasteMode(false)" style="flex:1;padding:9px;border-radius:10px;border:2px solid var(--border);background:var(--light);color:var(--muted);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer">Actual</button>
+      </div>
+    </div>
     <div class="fg">
       <label class="fl">Paste exported JSON here</label>
       <textarea id="paste-txt" class="fi" rows="8" placeholder='[{"id":"...","type":"out",...}]  or  {"data":[...]}'
@@ -409,12 +408,30 @@
   </div>
 </div>
 
+<!-- ═══ CELL EDIT SHEET ═══ -->
+<div class="overlay" id="cell-ov">
+  <div class="sheet">
+    <div class="handle"></div>
+    <div class="sheet-hdr">
+      <span class="sheet-title" id="cell-title">Set Budget</span>
+      <button class="sheet-close" onclick="closeCell()">✕</button>
+    </div>
+    <div class="fg">
+      <label class="fl" id="cell-date-lbl">Amount (RM)</label>
+      <input class="fi" type="number" id="i-cell" inputmode="decimal" step="0.01" min="0" placeholder="0.00">
+    </div>
+    <button class="btn btn-primary" onclick="saveCellBudget()">Save</button>
+    <button class="btn btn-danger" id="cell-del" onclick="deleteCellBudget()" style="display:none">Remove</button>
+  </div>
+</div>
+
 <button class="fab" id="fab" onclick="openAdd()">+</button>
 
 <div class="bottom-nav">
-  <button class="nav-btn active" id="nav-daily" onclick="goTab('daily')"><span class="icon">📅</span>Daily</button>
-  <button class="nav-btn" id="nav-monthly" onclick="goTab('monthly')"><span class="icon">📊</span>Monthly</button>
-  <button class="nav-btn" id="nav-settings" onclick="goTab('settings')"><span class="icon">⚙️</span>Settings</button>
+  <button class="nav-btn active" id="nav-daily"    onclick="goTab('daily')">   <span class="icon">📅</span>Daily</button>
+  <button class="nav-btn"        id="nav-budget"   onclick="goTab('budget')">  <span class="icon">📋</span>Budget</button>
+  <button class="nav-btn"        id="nav-actual"   onclick="goTab('actual')">  <span class="icon">📊</span>Actual</button>
+  <button class="nav-btn"        id="nav-settings" onclick="goTab('settings')"><span class="icon">⚙️</span>Settings</button>
 </div>
 
 <!-- ═══ EXPENSE / INCOME SHEET ═══ -->
@@ -425,12 +442,10 @@
       <span class="sheet-title" id="sh-title">Add Entry</span>
       <button class="sheet-close" onclick="closeExp()">✕</button>
     </div>
-
     <div class="type-toggle">
       <button class="type-btn active-expense" id="tb-out" onclick="setType('out')">— Out</button>
       <button class="type-btn" id="tb-in"  onclick="setType('in')">+ In</button>
     </div>
-
     <div class="fg">
       <label class="fl">Amount (RM)</label>
       <input class="fi" type="number" id="i-amt" inputmode="decimal" step="0.01" min="0" placeholder="0.00">
@@ -514,9 +529,12 @@ const cat  = (id, type) => {
 let tab    = 'daily';
 let vDay   = new Date();
 let vMon   = new Date(); vMon.setDate(1);
+let vAct   = new Date(); vAct.setDate(1);
 let editId = null;
 let eType  = 'out';
 let selCat = 'food';
+let pasteAsPlan = true;
+let cellMeta = null;
 
 // ─── Tab ─────────────────────────────────────────────────────────
 function goTab(t) {
@@ -525,11 +543,12 @@ function goTab(t) {
   document.querySelectorAll('.nav-btn').forEach(e => e.classList.remove('active'));
   document.getElementById('tab-' + t).classList.add('active');
   document.getElementById('nav-' + t).classList.add('active');
-  document.getElementById('fab').style.display = t === 'settings' ? 'none' : 'flex';
-  document.getElementById('hdr-title').textContent = {daily:'Today',monthly:'Monthly',settings:'Settings'}[t];
+  document.getElementById('fab').style.display = (t === 'settings' || t === 'budget') ? 'none' : 'flex';
+  document.getElementById('hdr-title').textContent = {daily:'Today',budget:'Budget',actual:'Actual',settings:'Settings'}[t];
   document.getElementById('hdr-sub').textContent = '';
-  if (t === 'daily')   renderDay();
-  if (t === 'monthly') renderMonth();
+  if (t === 'daily')    renderDay();
+  if (t === 'budget')   renderBudget();
+  if (t === 'actual')   renderActual();
   if (t === 'settings') renderSettings();
 }
 
@@ -539,7 +558,7 @@ function changeDay(d) { vDay = new Date(vDay); vDay.setDate(vDay.getDate()+d); r
 function renderDay() {
   const key   = dKey(vDay);
   const today = dKey(new Date());
-  const items = load().filter(e => e.date === key);
+  const items = load().filter(e => e.date === key && !e.plan);
   let lbl = vDay.toLocaleDateString('en-MY',{weekday:'short',day:'numeric',month:'short'});
   if (key === today) lbl = 'Today · ' + lbl;
   document.getElementById('day-lbl').textContent = lbl;
@@ -556,49 +575,34 @@ function renderDay() {
   list.innerHTML = items.slice().reverse().map(e => eRow(e)).join('');
 }
 
-// ─── Monthly ─────────────────────────────────────────────────────
+// ─── Budget ──────────────────────────────────────────────────────
 const DOW = ['AHAD','ISN','SEL','RAB','KHA','JUM','SAB'];
-function changeMonth(d) { vMon = new Date(vMon); vMon.setMonth(vMon.getMonth()+d); renderMonth(); }
+function changeBudget(d) { vMon = new Date(vMon); vMon.setMonth(vMon.getMonth()+d); renderBudget(); }
 
-function renderMonth() {
+function renderBudget() {
   const mk  = mKey(vMon);
   const yr  = vMon.getFullYear(), mo = vMon.getMonth();
   const dim = new Date(yr, mo+1, 0).getDate();
+  document.getElementById('bgt-lbl').textContent = vMon.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
 
-  document.getElementById('mon-lbl').textContent =
-    vMon.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
-
-  const items    = load().filter(e => e.date.startsWith(mk));
+  const items    = load().filter(e => e.date.startsWith(mk) && e.plan === true);
   const totalOut = items.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
   const totalIn  = items.filter(e=>e.type==='in' ).reduce((s,e)=>s+e.amount,0);
   const net      = totalIn - totalOut;
 
-  document.getElementById('mon-out').textContent = fmt(totalOut);
-  document.getElementById('mon-cnt').textContent = items.length + ' items';
+  document.getElementById('bgt-out').textContent   = fmt(totalOut);
+  document.getElementById('bgt-cnt').textContent   = items.length + ' items';
+  document.getElementById('bgt-in-lbl').textContent = totalIn > 0 ? '+ ' + fmt(totalIn) + ' in' : '';
 
-  const sg = document.getElementById('mon-summary-grid');
+  const sg = document.getElementById('bgt-summary-grid');
   if (items.length) {
     sg.style.display = 'grid';
-    document.getElementById('ms-in').textContent = fmt(totalIn);
-    const netEl = document.getElementById('ms-net');
+    document.getElementById('bs-in').textContent = fmt(totalIn);
+    const netEl = document.getElementById('bs-net');
     netEl.textContent = (net>=0?'+':'-')+' '+fmt(Math.abs(net));
     netEl.className = 'sum-val '+(net>=0?'grn':'red');
   } else { sg.style.display = 'none'; }
 
-  const bdg = getB();
-  const bbar = document.getElementById('bbar'), btext = document.getElementById('btext');
-  if (bdg) {
-    const pct = Math.min(totalOut/bdg*100,100);
-    bbar.style.display = btext.style.display = 'block';
-    const fill = document.getElementById('bfill');
-    fill.style.width = pct+'%';
-    fill.className = 'bfill'+(totalOut>bdg?' over':'');
-    document.getElementById('bt-spent').textContent = fmt(totalOut)+' spent';
-    document.getElementById('bt-limit').textContent = fmt(bdg)+' budget';
-    document.getElementById('mon-budget-lbl').textContent = Math.round(pct)+'% used';
-  } else { bbar.style.display = btext.style.display = 'none'; document.getElementById('mon-budget-lbl').textContent = ''; }
-
-  // Build per-cell grid
   const grid = {};
   items.forEach(e => {
     const d = +e.date.split('-')[2];
@@ -618,48 +622,154 @@ function renderMonth() {
   const emptyTds = '<td></td>'.repeat(dim);
   let h = `<div class="mon-grid-wrap"><table class="mon-tbl"><thead><tr>
     <th class="s-col">Category</th>`;
-  days.forEach(d => {
-    const dow = new Date(yr,mo,d).getDay();
-    h += `<th class="day-col">${d}<br>${DOW[dow]}</th>`;
-  });
+  days.forEach(d => { const dow=new Date(yr,mo,d).getDay(); h+=`<th class="day-col">${d}<br>${DOW[dow]}</th>`; });
   h += `<th class="tot-col">Total</th></tr></thead><tbody>`;
 
-  // MONEY IN section
   h += `<tr class="sec-hdr"><td class="s-col">MONEY IN</td>${emptyTds}<td></td></tr>`;
   CATS_IN.forEach(c => {
     const r = grid['in_'+c.id]||{};
     const t = Object.values(r).reduce((s,v)=>s+v,0);
     h += `<tr class="in-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
-    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="in-amt">${v}</span>`:''}</td>`; });
+    days.forEach(d => { const v=fc(r[d]); h+=`<td class="cell-tap" onclick="editBudgetCell('in','${c.id}',${d})">${v?`<span class="in-amt">${v}</span>`:''}</td>`; });
     h += `<td class="tot-col in-amt">${fc(t)}</td></tr>`;
   });
   h += `<tr class="tot-row"><td class="s-col">▲ In Total</td>`;
   days.forEach(d => h+=`<td>${fc(dayIn[d])}</td>`);
   h += `<td class="tot-col">${fc(totalIn)}</td></tr>`;
 
-  // MONEY OUT section
   h += `<tr class="sec-hdr"><td class="s-col">MONEY OUT</td>${emptyTds}<td></td></tr>`;
   CATS_OUT.forEach(c => {
     const r = grid['out_'+c.id]||{};
     const t = Object.values(r).reduce((s,v)=>s+v,0);
     h += `<tr class="out-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
-    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="out-amt">${v}</span>`:''}</td>`; });
+    days.forEach(d => { const v=fc(r[d]); h+=`<td class="cell-tap" onclick="editBudgetCell('out','${c.id}',${d})">${v?`<span class="out-amt">${v}</span>`:''}</td>`; });
     h += `<td class="tot-col out-amt">${fc(t)}</td></tr>`;
   });
   h += `<tr class="tot-row"><td class="s-col">▼ Out Total</td>`;
   days.forEach(d => h+=`<td>${fc(dayOut[d])}</td>`);
   h += `<td class="tot-col">${fc(totalOut)}</td></tr>`;
 
-  // NET row
   h += `<tr class="net-row"><td class="s-col">NET</td>`;
-  days.forEach(d => {
-    const n = (dayIn[d]||0)-(dayOut[d]||0);
-    h += `<td>${n?fc(Math.abs(n)):''}</td>`;
-  });
+  days.forEach(d => { const n=(dayIn[d]||0)-(dayOut[d]||0); h+=`<td>${n?fc(Math.abs(n)):''}</td>`; });
   h += `<td class="tot-col">${fc(Math.abs(net))}</td></tr>`;
   h += `</tbody></table></div>`;
+  document.getElementById('bgt-grid').innerHTML = h;
+}
 
-  document.getElementById('mon-grid').innerHTML = h;
+// ─── Cell edit ───────────────────────────────────────────────────
+function editBudgetCell(type, catId, day) {
+  const yr = vMon.getFullYear(), mo = vMon.getMonth();
+  const dateStr = `${yr}-${String(mo+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+  cellMeta = { type, catId, day, dateStr };
+  const existing = load().filter(e => e.plan===true && e.date===dateStr && e.type===type && e.category===catId);
+  const cur = existing.reduce((s,e)=>s+e.amount,0);
+  const catList = type==='in' ? CATS_IN : CATS_OUT;
+  const catObj = catList.find(c=>c.id===catId);
+  const dateLabel = new Date(yr,mo,day).toLocaleDateString('en-MY',{weekday:'short',day:'numeric',month:'short'});
+  document.getElementById('cell-title').textContent = `${catObj?.emoji||''} ${catObj?.label||catId}`;
+  document.getElementById('cell-date-lbl').textContent = dateLabel;
+  document.getElementById('i-cell').value = cur || '';
+  document.getElementById('cell-del').style.display = cur ? 'block' : 'none';
+  document.getElementById('cell-ov').classList.add('open');
+  setTimeout(()=>document.getElementById('i-cell').focus(),350);
+}
+function closeCell() { document.getElementById('cell-ov').classList.remove('open'); cellMeta=null; }
+function saveCellBudget() {
+  const amt = parseFloat(document.getElementById('i-cell').value);
+  if (!cellMeta) return;
+  if (!amt || amt <= 0) { deleteCellBudget(); return; }
+  const data = load().filter(e => !(e.plan===true && e.date===cellMeta.dateStr && e.type===cellMeta.type && e.category===cellMeta.catId));
+  const catList = cellMeta.type==='in' ? CATS_IN : CATS_OUT;
+  const catObj = catList.find(c=>c.id===cellMeta.catId);
+  data.push({ id:uid(), type:cellMeta.type, category:cellMeta.catId, amount:amt,
+    description:catObj?.label||cellMeta.catId, date:cellMeta.dateStr,
+    at:new Date().toISOString(), plan:true });
+  store(data); closeCell(); renderBudget();
+}
+function deleteCellBudget() {
+  if (!cellMeta) return;
+  store(load().filter(e => !(e.plan===true && e.date===cellMeta.dateStr && e.type===cellMeta.type && e.category===cellMeta.catId)));
+  closeCell(); renderBudget();
+}
+
+// ─── Actual ──────────────────────────────────────────────────────
+function changeActual(d) { vAct = new Date(vAct); vAct.setMonth(vAct.getMonth()+d); renderActual(); }
+
+function renderActual() {
+  const mk  = mKey(vAct);
+  const yr  = vAct.getFullYear(), mo = vAct.getMonth();
+  const dim = new Date(yr, mo+1, 0).getDate();
+  document.getElementById('act-lbl').textContent = vAct.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
+
+  const items    = load().filter(e => e.date.startsWith(mk) && !e.plan);
+  const bgtItems = load().filter(e => e.date.startsWith(mk) && e.plan===true);
+  const totalOut = items.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
+  const totalIn  = items.filter(e=>e.type==='in' ).reduce((s,e)=>s+e.amount,0);
+  const bgtOut   = bgtItems.filter(e=>e.type==='out').reduce((s,e)=>s+e.amount,0);
+  const bgtIn    = bgtItems.filter(e=>e.type==='in' ).reduce((s,e)=>s+e.amount,0);
+  const variance = bgtOut - totalOut;
+
+  document.getElementById('act-out').textContent = fmt(totalOut);
+  document.getElementById('act-cnt').textContent = items.length + ' items';
+  document.getElementById('act-var-lbl').textContent = bgtOut ? (variance>=0?'▼ Under budget':'▲ Over budget') : '';
+
+  document.getElementById('as-bgt').textContent = fmt(bgtOut);
+  const varEl = document.getElementById('as-var');
+  if (bgtOut) {
+    varEl.textContent = (variance>=0?'−':'+') + fmt(Math.abs(variance));
+    varEl.className = 'sum-val ' + (variance>=0?'grn':'red');
+  } else { varEl.textContent = '—'; varEl.className = 'sum-val'; }
+
+  const bgtGrid = {};
+  bgtItems.forEach(e => { const d=+e.date.split('-')[2]; const k=e.type+'_'+e.category; if(!bgtGrid[k])bgtGrid[k]={}; bgtGrid[k][d]=(bgtGrid[k][d]||0)+e.amount; });
+  const grid = {};
+  items.forEach(e => { const d=+e.date.split('-')[2]; const k=e.type+'_'+e.category; if(!grid[k])grid[k]={}; grid[k][d]=(grid[k][d]||0)+e.amount; });
+
+  const days = Array.from({length:dim},(_,i)=>i+1);
+  const fc = n => n ? (+n).toFixed(n%1?2:0).replace(/\B(?=(\d{3})+(?!\d))/g,',') : '';
+  const dayOut={}, dayIn={};
+  days.forEach(d => {
+    dayOut[d]=items.filter(e=>e.type==='out'&&+e.date.split('-')[2]===d).reduce((s,e)=>s+e.amount,0);
+    dayIn[d] =items.filter(e=>e.type==='in' &&+e.date.split('-')[2]===d).reduce((s,e)=>s+e.amount,0);
+  });
+
+  const emptyTds = '<td></td>'.repeat(dim);
+  let h = `<div class="mon-grid-wrap"><table class="mon-tbl"><thead><tr>
+    <th class="s-col">Category</th>`;
+  days.forEach(d => { const dow=new Date(yr,mo,d).getDay(); h+=`<th class="day-col">${d}<br>${DOW[dow]}</th>`; });
+  h += `<th class="tot-col">Act/Bgt</th></tr></thead><tbody>`;
+
+  h += `<tr class="sec-hdr"><td class="s-col">MONEY IN</td>${emptyTds}<td></td></tr>`;
+  CATS_IN.forEach(c => {
+    const r=grid['in_'+c.id]||{}, br=bgtGrid['in_'+c.id]||{};
+    const t=Object.values(r).reduce((s,v)=>s+v,0), bt=Object.values(br).reduce((s,v)=>s+v,0);
+    h+=`<tr class="in-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
+    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="in-amt">${v}</span>`:''}</td>`; });
+    h+=`<td class="tot-col"><span class="in-amt">${fc(t)||'—'}</span>${bt?`<br><span style="font-size:9px;color:#aaa;font-weight:400">${fc(bt)}</span>`:''}</td></tr>`;
+  });
+  h+=`<tr class="tot-row"><td class="s-col">▲ In Total</td>`;
+  days.forEach(d=>h+=`<td>${fc(dayIn[d])}</td>`);
+  h+=`<td class="tot-col">${fc(totalIn)}${bgtIn?`<br><span style="font-size:9px;color:#aaa;font-weight:400">${fc(bgtIn)}</span>`:''}</td></tr>`;
+
+  h+=`<tr class="sec-hdr"><td class="s-col">MONEY OUT</td>${emptyTds}<td></td></tr>`;
+  CATS_OUT.forEach(c => {
+    const r=grid['out_'+c.id]||{}, br=bgtGrid['out_'+c.id]||{};
+    const t=Object.values(r).reduce((s,v)=>s+v,0), bt=Object.values(br).reduce((s,v)=>s+v,0);
+    const over = bt && t > bt;
+    h+=`<tr class="out-row"><td class="s-col">${c.emoji} ${c.label}</td>`;
+    days.forEach(d => { const v=fc(r[d]); h+=`<td>${v?`<span class="${over?'':'out-amt'}" style="${over?'color:#c0392b;font-weight:700':''}">${v}</span>`:''}</td>`; });
+    h+=`<td class="tot-col"><span style="color:${over?'#c0392b':t?'#c0392b':'inherit'};font-weight:700">${fc(t)||'—'}</span>${bt?`<br><span style="font-size:9px;color:#aaa;font-weight:400">${fc(bt)}</span>`:''}</td></tr>`;
+  });
+  h+=`<tr class="tot-row"><td class="s-col">▼ Out Total</td>`;
+  days.forEach(d=>h+=`<td>${fc(dayOut[d])}</td>`);
+  h+=`<td class="tot-col">${fc(totalOut)}${bgtOut?`<br><span style="font-size:9px;color:#aaa;font-weight:400">${fc(bgtOut)}</span>`:''}</td></tr>`;
+
+  const net=totalIn-totalOut, bgtNet=bgtIn-bgtOut;
+  h+=`<tr class="net-row"><td class="s-col">NET</td>`;
+  days.forEach(d=>{const n=(dayIn[d]||0)-(dayOut[d]||0); h+=`<td>${n?fc(Math.abs(n)):''}</td>`;});
+  h+=`<td class="tot-col">${fc(Math.abs(net))}${bgtNet?`<br><span style="font-size:9px;opacity:.7;font-weight:400">${fc(Math.abs(bgtNet))}</span>`:''}</td></tr>`;
+  h+=`</tbody></table></div>`;
+  document.getElementById('act-grid').innerHTML = h;
 }
 
 // ─── Settings ────────────────────────────────────────────────────
@@ -691,7 +801,6 @@ function setType(t) {
   buildCatGrid();
 }
 
-// ─── Cat grid ────────────────────────────────────────────────────
 function buildCatGrid() {
   const list = eType === 'in' ? CATS_IN : CATS_OUT;
   document.getElementById('cat-grid').innerHTML = list.map(c =>
@@ -707,7 +816,7 @@ function openAdd() {
   document.getElementById('sh-title').textContent = 'Add Entry';
   document.getElementById('i-amt').value  = '';
   document.getElementById('i-desc').value = '';
-  document.getElementById('i-date').value = dKey(vDay);
+  document.getElementById('i-date').value = dKey(tab === 'actual' ? vAct : vDay);
   document.getElementById('del-btn').style.display = 'none';
   setType('out');
   document.getElementById('exp-ov').classList.add('open');
@@ -732,10 +841,7 @@ function saveEntry() {
   const desc = document.getElementById('i-desc').value.trim();
   const date = document.getElementById('i-date').value;
   const amtEl = document.getElementById('i-amt');
-  if (!amt || amt <= 0) {
-    amtEl.classList.add('error'); amtEl.focus();
-    setTimeout(() => amtEl.classList.remove('error'), 1500); return;
-  }
+  if (!amt || amt <= 0) { amtEl.classList.add('error'); amtEl.focus(); setTimeout(()=>amtEl.classList.remove('error'),1500); return; }
   if (!date) return;
   const data = load();
   if (editId) {
@@ -753,19 +859,15 @@ function deleteEntry() {
   store(load().filter(e => e.id !== editId));
   closeExp(); refresh();
 }
-function refresh() { if (tab==='daily') renderDay(); else if (tab==='monthly') renderMonth(); }
+function refresh() {
+  if (tab==='daily')  renderDay();
+  if (tab==='actual') renderActual();
+}
 
-// ─── Budget ──────────────────────────────────────────────────────
-function openBudget() {
-  document.getElementById('i-bdg').value = getB() || '';
-  document.getElementById('bdg-ov').classList.add('open');
-}
+// ─── Budget overlay ──────────────────────────────────────────────
+function openBudget() { document.getElementById('i-bdg').value=getB()||''; document.getElementById('bdg-ov').classList.add('open'); }
 function closeBudget() { document.getElementById('bdg-ov').classList.remove('open'); }
-function saveBudget() {
-  const v = parseFloat(document.getElementById('i-bdg').value);
-  if (!v || v <= 0) return;
-  setB(v); closeBudget(); renderSettings();
-}
+function saveBudget() { const v=parseFloat(document.getElementById('i-bdg').value); if(!v||v<=0)return; setB(v); closeBudget(); renderSettings(); }
 function clearBudget() { setB(null); closeBudget(); renderSettings(); }
 
 // ─── Data ────────────────────────────────────────────────────────
@@ -775,9 +877,19 @@ function exportData() {
   a.download = 'ahh-expenses-' + dKey(new Date()) + '.json'; a.click();
 }
 function confirmClear() {
-  if (confirm('Delete ALL data?')) { localStorage.removeItem('ahh_xp'); refresh(); }
+  if (confirm('Delete ALL data?')) { localStorage.removeItem('ahh_xp'); refresh(); renderBudget(); renderActual(); }
 }
-function importData(input) {
+
+function _mergeImport(incoming, asPlan) {
+  const existing = load();
+  const existIds = new Set(existing.map(x => x.id));
+  const marked = incoming.map(x => ({ ...x, plan: asPlan }));
+  const added = marked.filter(x => x.id && x.date && x.amount && !existIds.has(x.id));
+  const replaced = marked.filter(x => x.id && existIds.has(x.id));
+  return { existing, added, replaced };
+}
+
+function importData(input, asPlan) {
   const file = input.files[0]; if (!file) return;
   input.value = '';
   const reader = new FileReader();
@@ -786,54 +898,59 @@ function importData(input) {
       const parsed = JSON.parse(e.target.result);
       const incoming = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.data) ? parsed.data : null);
       if (!incoming) { alert('Invalid file. Must be an exported AHH JSON.'); return; }
-      const existing = load();
-      const existIds = new Set(existing.map(x => x.id));
-      const added = incoming.filter(x => x.id && x.date && x.amount && !existIds.has(x.id));
-      const replaced = incoming.filter(x => x.id && existIds.has(x.id));
       if (!incoming.length) { alert('File has no entries.'); return; }
+      const { existing, added, replaced } = _mergeImport(incoming, asPlan);
       const msg = added.length && replaced.length
         ? `Add ${added.length} new + update ${replaced.length} existing entries?`
         : added.length ? `Import ${added.length} new entries?`
         : `Update ${replaced.length} existing entries?`;
       if (!confirm(msg)) return;
-      const merged = existing.map(x => { const u = replaced.find(r=>r.id===x.id); return u||x; });
+      const merged = existing.map(x => { const u=replaced.find(r=>r.id===x.id); return u||x; });
       store([...merged, ...added]);
       if (parsed.budget) setB(parsed.budget);
-      renderSettings(); refresh();
+      renderSettings(); refresh(); renderBudget(); renderActual();
       alert(`Done. ${added.length} added, ${replaced.length} updated.`);
     } catch { alert('Could not read file. Make sure it is a valid JSON.'); }
   };
   reader.readAsText(file);
 }
 
-// ─── Copy month ──────────────────────────────────────────────────
+// ─── Copy month (plan entries only) ──────────────────────────────
 function copyMonth() {
   const mk  = mKey(vMon);
-  const src = load().filter(e => e.date.startsWith(mk));
-  if (!src.length) { alert('No entries in this month to copy.'); return; }
+  const src = load().filter(e => e.date.startsWith(mk) && e.plan===true);
+  if (!src.length) { alert('No budget entries in this month to copy.'); return; }
   const next = new Date(vMon); next.setMonth(next.getMonth()+1);
   const nk = mKey(next);
   const nLabel = next.toLocaleDateString('en-MY',{month:'long',year:'numeric'});
-  if (!confirm(`Copy ${src.length} entries to ${nLabel}?`)) return;
+  if (!confirm(`Copy ${src.length} budget entries to ${nLabel}?`)) return;
   const existing = load();
   const added = src.map(e => ({
-    ...e,
-    id: uid(),
-    date: nk + e.date.slice(7),
-    at: new Date().toISOString()
+    ...e, id:uid(), date:nk+e.date.slice(7), at:new Date().toISOString()
   })).filter(e => {
-    // clamp to valid days in the target month
     const day = +e.date.split('-')[2];
-    const maxDay = new Date(next.getFullYear(), next.getMonth()+1, 0).getDate();
-    return day <= maxDay;
+    return day <= new Date(next.getFullYear(),next.getMonth()+1,0).getDate();
   });
   store([...existing, ...added]);
   alert(`Copied ${added.length} entries to ${nLabel}.`);
-  changeMonth(1);
+  changeBudget(1);
 }
 
 // ─── Paste import ─────────────────────────────────────────────────
-function openPaste()  { document.getElementById('paste-txt').value=''; document.getElementById('paste-ov').classList.add('open'); }
+function setPasteMode(asPlan) {
+  pasteAsPlan = asPlan;
+  document.getElementById('paste-plan-btn').style.borderColor = asPlan ? 'var(--green)' : 'var(--border)';
+  document.getElementById('paste-plan-btn').style.background  = asPlan ? '#f0faf4' : 'var(--light)';
+  document.getElementById('paste-plan-btn').style.color       = asPlan ? 'var(--green)' : 'var(--muted)';
+  document.getElementById('paste-act-btn').style.borderColor  = !asPlan ? '#c0392b' : 'var(--border)';
+  document.getElementById('paste-act-btn').style.background   = !asPlan ? '#fff5f5' : 'var(--light)';
+  document.getElementById('paste-act-btn').style.color        = !asPlan ? '#c0392b' : 'var(--muted)';
+}
+function openPaste() {
+  document.getElementById('paste-txt').value='';
+  setPasteMode(true);
+  document.getElementById('paste-ov').classList.add('open');
+}
 function closePaste() { document.getElementById('paste-ov').classList.remove('open'); }
 function importPasted() {
   const raw = document.getElementById('paste-txt').value.trim();
@@ -842,26 +959,23 @@ function importPasted() {
     const parsed = JSON.parse(raw);
     const incoming = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.data) ? parsed.data : null);
     if (!incoming) { alert('Invalid JSON. Must be an array or {data:[...]} object.'); return; }
-    const existing = load();
-    const existIds = new Set(existing.map(x => x.id));
-    const added = incoming.filter(x => x.id && x.date && x.amount && !existIds.has(x.id));
-    const replaced = incoming.filter(x => x.id && existIds.has(x.id));
     if (!incoming.length) { alert('No entries found.'); return; }
+    const { existing, added, replaced } = _mergeImport(incoming, pasteAsPlan);
     const msg = added.length && replaced.length
       ? `Add ${added.length} new + update ${replaced.length} existing?`
       : added.length ? `Import ${added.length} new entries?`
       : `Update ${replaced.length} existing entries?`;
     if (!confirm(msg)) return;
-    const merged = existing.map(x => { const u = replaced.find(r=>r.id===x.id); return u||x; });
+    const merged = existing.map(x => { const u=replaced.find(r=>r.id===x.id); return u||x; });
     store([...merged, ...added]);
     if (parsed.budget) setB(parsed.budget);
-    closePaste(); renderSettings(); refresh();
+    closePaste(); renderSettings(); refresh(); renderBudget(); renderActual();
     alert(`Done. ${added.length} added, ${replaced.length} updated.`);
   } catch { alert('Could not parse JSON. Check the format.'); }
 }
 
 // ─── Close on tap outside ────────────────────────────────────────
-['exp-ov','bdg-ov','paste-ov'].forEach(id => {
+['exp-ov','bdg-ov','paste-ov','cell-ov'].forEach(id => {
   document.getElementById(id).addEventListener('click', function(e) {
     if (e.target === this) this.classList.remove('open');
   });
