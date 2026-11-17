@@ -375,6 +375,8 @@
   <div class="s-sec">
     <div class="s-head">Data</div>
     <div class="s-row" onclick="exportData()"><span class="s-lbl">Export JSON</span><span class="chev">›</span></div>
+    <div class="s-row" onclick="document.getElementById('import-file').click()"><span class="s-lbl">Import JSON</span><span class="chev">›</span></div>
+    <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(this)">
     <div class="s-row" onclick="confirmClear()"><span class="s-lbl" style="color:#c0392b">Clear All Data</span><span class="chev">›</span></div>
   </div>
   <div class="s-sec">
@@ -753,6 +755,34 @@ function exportData() {
 }
 function confirmClear() {
   if (confirm('Delete ALL data?')) { localStorage.removeItem('ahh_xp'); refresh(); }
+}
+function importData(input) {
+  const file = input.files[0]; if (!file) return;
+  input.value = '';
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const parsed = JSON.parse(e.target.result);
+      const incoming = Array.isArray(parsed) ? parsed : (Array.isArray(parsed.data) ? parsed.data : null);
+      if (!incoming) { alert('Invalid file. Must be an exported AHH JSON.'); return; }
+      const existing = load();
+      const existIds = new Set(existing.map(x => x.id));
+      const added = incoming.filter(x => x.id && x.date && x.amount && !existIds.has(x.id));
+      const replaced = incoming.filter(x => x.id && existIds.has(x.id));
+      if (!incoming.length) { alert('File has no entries.'); return; }
+      const msg = added.length && replaced.length
+        ? `Add ${added.length} new + update ${replaced.length} existing entries?`
+        : added.length ? `Import ${added.length} new entries?`
+        : `Update ${replaced.length} existing entries?`;
+      if (!confirm(msg)) return;
+      const merged = existing.map(x => { const u = replaced.find(r=>r.id===x.id); return u||x; });
+      store([...merged, ...added]);
+      if (parsed.budget) setB(parsed.budget);
+      renderSettings(); refresh();
+      alert(`Done. ${added.length} added, ${replaced.length} updated.`);
+    } catch { alert('Could not read file. Make sure it is a valid JSON.'); }
+  };
+  reader.readAsText(file);
 }
 
 // ─── Close on tap outside ────────────────────────────────────────
