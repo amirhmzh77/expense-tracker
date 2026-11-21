@@ -280,6 +280,69 @@
     .out-amt { color: #c0392b; }
     .cell-tap { cursor: pointer; }
     .cell-tap:active { background: rgba(26,110,60,.12) !important; }
+
+    /* ── Tax badge ── */
+    .tax-badge {
+      display: inline-block; font-size: 9px; font-weight: 700;
+      background: #e8f5e9; color: #1a6e3c; border-radius: 5px;
+      padding: 1px 5px; margin-left: 4px; letter-spacing: .3px;
+    }
+    .rcpt-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #2980b9;
+      display: inline-block; margin-left: 5px; vertical-align: middle;
+    }
+
+    /* ── Toggle pill ── */
+    .pill-toggle {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--light); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 11px 14px; cursor: pointer;
+    }
+    .pill-toggle.on { border-color: var(--green); background: #f0faf4; }
+    .pill-lbl { font-size: 14px; font-weight: 500; }
+    .pill-ind {
+      width: 42px; height: 24px; border-radius: 12px; background: #ccc;
+      position: relative; transition: background .2s;
+    }
+    .pill-ind::after {
+      content: ''; position: absolute; top: 3px; left: 3px;
+      width: 18px; height: 18px; border-radius: 50%; background: #fff;
+      transition: left .2s; box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    }
+    .pill-toggle.on .pill-ind { background: var(--green); }
+    .pill-toggle.on .pill-ind::after { left: 21px; }
+
+    /* ── Receipt ── */
+    .rcpt-thumb-wrap {
+      position: relative; display: inline-block; margin-top: 8px;
+    }
+    .rcpt-thumb {
+      width: 100%; max-height: 160px; object-fit: cover;
+      border-radius: 10px; border: 1.5px solid var(--border); cursor: pointer;
+    }
+    .rcpt-del {
+      position: absolute; top: 6px; right: 6px;
+      background: rgba(0,0,0,.55); color: #fff; border: none; border-radius: 50%;
+      width: 26px; height: 26px; font-size: 13px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* ── Lightbox ── */
+    #rcpt-lb {
+      position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 500;
+      display: none; align-items: center; justify-content: center;
+    }
+    #rcpt-lb.open { display: flex; }
+    #rcpt-lb img { max-width: 95vw; max-height: 90dvh; border-radius: 10px; }
+    #rcpt-lb-close {
+      position: absolute; top: 20px; right: 20px;
+      background: rgba(255,255,255,.2); color: #fff; border: none;
+      border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer;
+    }
+
+    /* ── Tax deductible row in Actual ── */
+    .tax-row td { background: #e8f5e9; color: #1a6e3c; font-weight: 600; font-size: 10px; }
+    .tax-row td.s-col { background: #e8f5e9; }
   </style>
 </head>
 <body>
@@ -370,6 +433,13 @@
       <span class="s-lbl">Monthly Budget (RM)</span>
       <span class="s-val" id="bdg-disp">Not set</span>
       <span class="chev">›</span>
+    </div>
+  </div>
+  <div class="s-sec">
+    <div class="s-head">Tax</div>
+    <div class="s-row" style="cursor:default">
+      <span class="s-lbl">📋 Tax Deductible This Year</span>
+      <span class="s-val" id="tax-yr-total">—</span>
     </div>
   </div>
   <div class="s-sec">
@@ -470,9 +540,35 @@
       <label class="fl">Date</label>
       <input class="fi" type="date" id="i-date">
     </div>
+    <div class="fg" id="tax-fg" style="display:none">
+      <div class="pill-toggle" id="tax-toggle" onclick="toggleTax()">
+        <span class="pill-lbl">📋 Tax Deductible</span>
+        <div class="pill-ind"></div>
+      </div>
+    </div>
+    <div class="fg">
+      <label class="fl">Receipt</label>
+      <div id="rcpt-preview" style="display:none">
+        <div class="rcpt-thumb-wrap" style="width:100%">
+          <img id="rcpt-img" class="rcpt-thumb" src="" onclick="viewReceipt()">
+          <button class="rcpt-del" onclick="removeReceipt()">✕</button>
+        </div>
+      </div>
+      <button onclick="pickReceipt()" id="rcpt-btn"
+        style="width:100%;padding:11px;border-radius:12px;border:1.5px dashed var(--border);background:var(--light);color:var(--muted);font-size:13px;font-weight:500;cursor:pointer;font-family:inherit;margin-top:4px">
+        📷 Add Receipt Photo
+      </button>
+      <input type="file" id="rcpt-input" accept="image/*" capture="environment" style="display:none" onchange="handleReceiptFile(this)">
+    </div>
     <button class="btn btn-primary" onclick="saveEntry()">Save</button>
     <button class="btn btn-danger" id="del-btn" onclick="deleteEntry()" style="display:none">Delete</button>
   </div>
+</div>
+
+<!-- ═══ RECEIPT LIGHTBOX ═══ -->
+<div id="rcpt-lb" onclick="closeLightbox()">
+  <button id="rcpt-lb-close" onclick="closeLightbox()">✕</button>
+  <img id="rcpt-lb-img" src="">
 </div>
 
 <!-- ═══ BUDGET SHEET ═══ -->
@@ -544,6 +640,8 @@ let eType  = 'out';
 let selCat = 'food';
 let pasteAsPlan = true;
 let cellMeta = null;
+let taxDed  = false;
+let rcptData = null;
 
 // ─── Tab ─────────────────────────────────────────────────────────
 function goTab(t) {
@@ -784,6 +882,17 @@ function renderActual() {
   days.forEach(d=>h+=`<td>${fc(dayOut[d])}</td>`);
   h+=`<td class="tot-col">${fc(totalOut)}${bgtOut?`<br><span style="font-size:9px;color:#aaa;font-weight:400">${fc(bgtOut)}</span>`:''}</td></tr>`;
 
+  // Tax deductible row
+  const taxItems = items.filter(e=>e.type==='out'&&e.taxDeductible);
+  const taxDayTot = {};
+  days.forEach(d => { taxDayTot[d] = taxItems.filter(e=>+e.date.split('-')[2]===d).reduce((s,e)=>s+e.amount,0); });
+  const taxTotal = taxItems.reduce((s,e)=>s+e.amount,0);
+  if (taxTotal > 0) {
+    h+=`<tr class="tax-row"><td class="s-col">📋 Tax Deductible</td>`;
+    days.forEach(d=>h+=`<td>${taxDayTot[d]?fc(taxDayTot[d]):''}</td>`);
+    h+=`<td class="tot-col">${fc(taxTotal)}</td></tr>`;
+  }
+
   const net=totalIn-totalOut, bgtNet=bgtIn-bgtOut;
   h+=`<tr class="net-row"><td class="s-col">NET</td>`;
   days.forEach(d=>{const n=(dayIn[d]||0)-(dayOut[d]||0); h+=`<td>${n?fc(Math.abs(n)):''}</td>`;});
@@ -796,16 +905,23 @@ function renderActual() {
 function renderSettings() {
   const b = getB();
   document.getElementById('bdg-disp').textContent = b ? fmt(b) : 'Not set';
+  const yr = new Date().getFullYear();
+  const taxTotal = load().filter(e => !e.plan && e.taxDeductible && e.date.startsWith(yr+''))
+                         .reduce((s,e) => s+e.amount, 0);
+  const taxEl = document.getElementById('tax-yr-total');
+  if (taxEl) taxEl.textContent = taxTotal > 0 ? fmt(taxTotal) : '—';
 }
 
 // ─── Row ─────────────────────────────────────────────────────────
 function eRow(e) {
-  const c   = cat(e.category, e.type);
+  const c    = cat(e.category, e.type);
   const isIn = e.type === 'in';
+  const taxBadge  = e.taxDeductible ? `<span class="tax-badge">TAX</span>` : '';
+  const rcptDot   = e.receipt ? `<span class="rcpt-dot" title="Receipt attached"></span>` : '';
   return `<div class="expense-item" onclick="openEdit('${e.id}')">
     <div class="eicon" style="background:${c.color}22">${c.emoji}</div>
     <div class="einfo">
-      <div class="edesc">${e.description || c.label}</div>
+      <div class="edesc">${e.description || c.label}${taxBadge}${rcptDot}</div>
       <div class="ecat">${c.label}${isIn?' · Income':''}</div>
     </div>
     <div class="eamt${isIn?' income':''}">${isIn?'+':'-'}${fmt(e.amount)}</div>
@@ -818,8 +934,55 @@ function setType(t) {
   document.getElementById('tb-out').className = 'type-btn' + (t==='out'?' active-expense':'');
   document.getElementById('tb-in' ).className = 'type-btn' + (t==='in' ?' active-income':'');
   selCat = t === 'out' ? 'food' : 'gaji';
+  document.getElementById('tax-fg').style.display = t === 'out' ? '' : 'none';
+  if (t === 'in') { taxDed = false; _updateTaxUI(); }
   buildCatGrid();
 }
+
+function toggleTax() {
+  taxDed = !taxDed;
+  _updateTaxUI();
+}
+function _updateTaxUI() {
+  const el = document.getElementById('tax-toggle');
+  el.classList.toggle('on', taxDed);
+}
+
+function pickReceipt() {
+  document.getElementById('rcpt-input').click();
+}
+function handleReceiptFile(input) {
+  const file = input.files[0]; if (!file) return;
+  input.value = '';
+  const reader = new FileReader();
+  reader.onload = ev => {
+    const img = new Image();
+    img.onload = () => {
+      const MAX = 1000;
+      let w = img.width, h = img.height;
+      if (w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
+      const canvas = document.createElement('canvas');
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      rcptData = canvas.toDataURL('image/jpeg', 0.65);
+      _showRcptPreview(rcptData);
+    };
+    img.src = ev.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+function _showRcptPreview(src) {
+  document.getElementById('rcpt-img').src = src;
+  document.getElementById('rcpt-preview').style.display = src ? '' : 'none';
+  document.getElementById('rcpt-btn').textContent = src ? '📷 Replace Photo' : '📷 Add Receipt Photo';
+}
+function removeReceipt() { rcptData = null; _showRcptPreview(null); }
+function viewReceipt() {
+  if (!rcptData) return;
+  document.getElementById('rcpt-lb-img').src = rcptData;
+  document.getElementById('rcpt-lb').classList.add('open');
+}
+function closeLightbox() { document.getElementById('rcpt-lb').classList.remove('open'); }
 
 function buildCatGrid() {
   const list = eType === 'in' ? CATS_IN : CATS_OUT;
@@ -833,11 +996,13 @@ function pickCat(id) { selCat = id; buildCatGrid(); }
 // ─── Add / Edit sheet ────────────────────────────────────────────
 function openAdd() {
   editId = null; eType = 'out'; selCat = 'food';
+  taxDed = false; rcptData = null;
   document.getElementById('sh-title').textContent = 'Add Entry';
   document.getElementById('i-amt').value  = '';
   document.getElementById('i-desc').value = '';
   document.getElementById('i-date').value = dKey(tab === 'actual' ? vAct : vDay);
   document.getElementById('del-btn').style.display = 'none';
+  _updateTaxUI(); _showRcptPreview(null);
   setType('out');
   document.getElementById('exp-ov').classList.add('open');
   setTimeout(() => document.getElementById('i-amt').focus(), 350);
@@ -846,11 +1011,13 @@ function openEdit(id) {
   const e = load().find(x => x.id === id);
   if (!e) return;
   editId = id; eType = e.type || 'out'; selCat = e.category;
+  taxDed = !!e.taxDeductible; rcptData = e.receipt || null;
   document.getElementById('sh-title').textContent = 'Edit Entry';
   document.getElementById('i-amt').value  = e.amount;
   document.getElementById('i-desc').value = e.description || '';
   document.getElementById('i-date').value = e.date;
   document.getElementById('del-btn').style.display = 'block';
+  _updateTaxUI(); _showRcptPreview(rcptData);
   setType(eType);
   document.getElementById('exp-ov').classList.add('open');
 }
@@ -864,11 +1031,20 @@ function saveEntry() {
   if (!amt || amt <= 0) { amtEl.classList.add('error'); amtEl.focus(); setTimeout(()=>amtEl.classList.remove('error'),1500); return; }
   if (!date) return;
   const data = load();
+  const extras = {};
+  if (eType === 'out' && taxDed) extras.taxDeductible = true;
+  else delete extras.taxDeductible;
+  if (rcptData) extras.receipt = rcptData;
   if (editId) {
     const i = data.findIndex(e => e.id === editId);
-    if (i !== -1) data[i] = { ...data[i], amount:amt, description:desc, category:selCat, date, type:eType };
+    if (i !== -1) {
+      const updated = { ...data[i], amount:amt, description:desc, category:selCat, date, type:eType };
+      if (eType === 'out' && taxDed) updated.taxDeductible = true; else delete updated.taxDeductible;
+      if (rcptData) updated.receipt = rcptData; else delete updated.receipt;
+      data[i] = updated;
+    }
   } else {
-    data.push({ id:uid(), amount:amt, description:desc, category:selCat, date, type:eType, at:new Date().toISOString() });
+    data.push({ id:uid(), amount:amt, description:desc, category:selCat, date, type:eType, at:new Date().toISOString(), ...extras });
   }
   store(data); closeExp(); refresh();
   if (navigator.vibrate) navigator.vibrate(30);
