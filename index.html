@@ -343,6 +343,26 @@
     /* ── Tax deductible row in Actual ── */
     .tax-row td { background: #e8f5e9; color: #1a6e3c; font-weight: 600; font-size: 10px; }
     .tax-row td.s-col { background: #e8f5e9; }
+
+    /* ── Relief category grid ── */
+    .relief-btn {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      padding: 7px 2px 6px; border: 2px solid var(--border); border-radius: 10px;
+      background: var(--light); cursor: pointer;
+      font-size: 9px; font-weight: 500; color: var(--text);
+      transition: all .15s; font-family: inherit; text-align: center; line-height: 1.2;
+    }
+    .relief-btn .re { font-size: 18px; }
+    .relief-btn.sel { border-color: var(--green); background: #f0faf4; color: var(--green); }
+
+    /* ── Tax breakdown table in Settings ── */
+    .tax-tbl { width: 100%; border-collapse: collapse; font-size: 12px; }
+    .tax-tbl td { padding: 7px 8px; border-bottom: 1px solid var(--border); }
+    .tax-tbl tr:last-child td { border-bottom: none; }
+    .tax-tbl .tc-emoji { width: 28px; text-align: center; }
+    .tax-tbl .tc-label { flex: 1; color: var(--text); font-weight: 500; }
+    .tax-tbl .tc-amt { text-align: right; color: var(--green); font-weight: 600; white-space: nowrap; }
+    .tax-tbl .tc-limit { text-align: right; color: var(--muted); font-size: 10px; white-space: nowrap; }
   </style>
 </head>
 <body>
@@ -440,6 +460,9 @@
     <div class="s-row" style="cursor:default">
       <span class="s-lbl">📋 Tax Deductible This Year</span>
       <span class="s-val" id="tax-yr-total">—</span>
+    </div>
+    <div id="tax-breakdown" style="display:none;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)">
+      <table class="tax-tbl" id="tax-tbl-body"></table>
     </div>
   </div>
   <div class="s-sec">
@@ -545,6 +568,11 @@
         <span class="pill-lbl">📋 Tax Deductible</span>
         <div class="pill-ind"></div>
       </div>
+      <div id="relief-sel" style="display:none;margin-top:10px">
+        <label class="fl">Tax Relief Category</label>
+        <div id="relief-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px"></div>
+        <div id="relief-limit-note" style="font-size:10px;color:var(--muted);margin-top:6px;text-align:center"></div>
+      </div>
     </div>
     <div class="fg">
       <label class="fl">Receipt</label>
@@ -589,6 +617,28 @@
 </div>
 
 <script>
+// ─── Tax Relief Categories (LHDN YA2026/2027) ───────────────────
+const TAX_RELIEFS = [
+  { id:'medical',     label:'Medical',      emoji:'🏥', limit:10000, desc:'Serious disease, fertility, vaccination, dental, mental health' },
+  { id:'postnatal',   label:'Postnatal',    emoji:'🤱', limit:3000,  desc:'Postnatal care (within RM10k medical cap, YA2027)' },
+  { id:'breastfeed',  label:'Breastfeed',   emoji:'🍼', limit:1000,  desc:'Breastfeeding equipment (child ≤2 yrs)' },
+  { id:'disability',  label:'Disability Eq',emoji:'♿', limit:6000,  desc:'Wheelchair, hearing aid, haemodialysis, artificial limb' },
+  { id:'parents',     label:'Parents Care', emoji:'👴', limit:8000,  desc:'Parents/grandparents medical, special needs, carer' },
+  { id:'edu_self',    label:'Self Study',   emoji:'🎓', limit:7000,  desc:'Education fees for self (any field YA2027; law/tech/Master\'s YA2026)' },
+  { id:'tvet',        label:'TVET',         emoji:'🔧', limit:3000,  desc:'Technical/vocational training (self or spouse, YA2027)' },
+  { id:'childcare',   label:'Childcare',    emoji:'🏫', limit:3000,  desc:'Registered childcare / kindergarten / daily care (child ≤12)' },
+  { id:'child_tuition',label:'Child Tuition',emoji:'📖',limit:2000, desc:'Child upskilling, STEM, arts, language, religious tuition' },
+  { id:'lifestyle',   label:'Lifestyle',    emoji:'📱', limit:2500,  desc:'Books, PC, phone, tablet, internet, AI apps, pet adoption' },
+  { id:'sports',      label:'Sports',       emoji:'⚽', limit:1000,  desc:'Equipment, shoes (≤RM300), gym, facility, competition' },
+  { id:'tourism',     label:'Tourism',      emoji:'🏛️', limit:1000,  desc:'Tourist attractions, cultural programme entrance' },
+  { id:'green',       label:'Green',        emoji:'♻️', limit:2500,  desc:'EV charging, compost machine, food waste grinder, home CCTV' },
+  { id:'life_ins',    label:'Life Ins',     emoji:'🛡️', limit:3000,  desc:'Life insurance / family takaful premium (within EPF+life RM7k)' },
+  { id:'med_ins',     label:'Med Ins',      emoji:'💊', limit:4000,  desc:'Medical & education insurance / takaful premiums' },
+  { id:'prs',         label:'PRS',          emoji:'🏦', limit:3000,  desc:'Private Retirement Scheme / deferred annuity (until YA2030)' },
+  { id:'sspn',        label:'SSPN',         emoji:'🎒', limit:8000,  desc:'SSPN net deposit for child (final year YA2027)' },
+  { id:'home_loan',   label:'Home Loan',    emoji:'🏠', limit:7000,  desc:'First home loan interest (house ≤RM500k, SPA 2025–2027)' },
+];
+
 // ─── Categories ──────────────────────────────────────────────────
 const CATS_OUT = [
   { id:'food',       label:'Food',      emoji:'🍔', color:'#e67e22' },
@@ -640,8 +690,9 @@ let eType  = 'out';
 let selCat = 'food';
 let pasteAsPlan = true;
 let cellMeta = null;
-let taxDed  = false;
-let rcptData = null;
+let taxDed   = false;
+let selRelief = null;
+let rcptData  = null;
 
 // ─── Tab ─────────────────────────────────────────────────────────
 function goTab(t) {
@@ -906,17 +957,51 @@ function renderSettings() {
   const b = getB();
   document.getElementById('bdg-disp').textContent = b ? fmt(b) : 'Not set';
   const yr = new Date().getFullYear();
-  const taxTotal = load().filter(e => !e.plan && e.taxDeductible && e.date.startsWith(yr+''))
-                         .reduce((s,e) => s+e.amount, 0);
+  const taxEntries = load().filter(e => !e.plan && e.taxDeductible && e.date.startsWith(yr+''));
+  const taxTotal = taxEntries.reduce((s,e) => s+e.amount, 0);
   const taxEl = document.getElementById('tax-yr-total');
   if (taxEl) taxEl.textContent = taxTotal > 0 ? fmt(taxTotal) : '—';
+
+  // Per-category breakdown
+  const breakdown = document.getElementById('tax-breakdown');
+  const tbl = document.getElementById('tax-tbl-body');
+  if (!breakdown || !tbl) return;
+  const catTotals = {};
+  taxEntries.forEach(e => {
+    const k = e.taxRelief || '__none__';
+    catTotals[k] = (catTotals[k] || 0) + e.amount;
+  });
+  const keys = Object.keys(catTotals);
+  if (keys.length === 0) { breakdown.style.display = 'none'; return; }
+  breakdown.style.display = '';
+  let rows = '';
+  TAX_RELIEFS.forEach(r => {
+    if (!catTotals[r.id]) return;
+    const over = catTotals[r.id] > r.limit;
+    rows += `<tr>
+      <td class="tc-emoji">${r.emoji}</td>
+      <td class="tc-label">${r.label}</td>
+      <td class="tc-amt"${over?' style="color:#c0392b"':''}>${fmt(catTotals[r.id])}</td>
+      <td class="tc-limit">/ RM${r.limit.toLocaleString()}</td>
+    </tr>`;
+  });
+  if (catTotals['__none__']) {
+    rows += `<tr>
+      <td class="tc-emoji">📋</td>
+      <td class="tc-label" style="color:var(--muted)">Untagged</td>
+      <td class="tc-amt">${fmt(catTotals['__none__'])}</td>
+      <td class="tc-limit"></td>
+    </tr>`;
+  }
+  tbl.innerHTML = rows;
 }
 
 // ─── Row ─────────────────────────────────────────────────────────
 function eRow(e) {
   const c    = cat(e.category, e.type);
   const isIn = e.type === 'in';
-  const taxBadge  = e.taxDeductible ? `<span class="tax-badge">TAX</span>` : '';
+  const tr = e.taxRelief ? TAX_RELIEFS.find(x=>x.id===e.taxRelief) : null;
+  const taxBadge = e.taxDeductible ? `<span class="tax-badge">${tr ? tr.emoji+' '+tr.label : 'TAX'}</span>` : '';
   const rcptDot   = e.receipt ? `<span class="rcpt-dot" title="Receipt attached"></span>` : '';
   return `<div class="expense-item" onclick="openEdit('${e.id}')">
     <div class="eicon" style="background:${c.color}22">${c.emoji}</div>
@@ -935,17 +1020,37 @@ function setType(t) {
   document.getElementById('tb-in' ).className = 'type-btn' + (t==='in' ?' active-income':'');
   selCat = t === 'out' ? 'food' : 'gaji';
   document.getElementById('tax-fg').style.display = t === 'out' ? '' : 'none';
-  if (t === 'in') { taxDed = false; _updateTaxUI(); }
+  if (t === 'in') { taxDed = false; selRelief = null; _updateTaxUI(); }
   buildCatGrid();
 }
 
 function toggleTax() {
   taxDed = !taxDed;
+  if (!taxDed) { selRelief = null; }
   _updateTaxUI();
 }
 function _updateTaxUI() {
-  const el = document.getElementById('tax-toggle');
-  el.classList.toggle('on', taxDed);
+  document.getElementById('tax-toggle').classList.toggle('on', taxDed);
+  document.getElementById('relief-sel').style.display = taxDed ? '' : 'none';
+  if (taxDed) buildReliefGrid();
+}
+
+function buildReliefGrid() {
+  document.getElementById('relief-grid').innerHTML = TAX_RELIEFS.map(r =>
+    `<button class="relief-btn${selRelief===r.id?' sel':''}" onclick="pickRelief('${r.id}')">
+      <span class="re">${r.emoji}</span>${r.label}
+    </button>`).join('');
+  const note = document.getElementById('relief-limit-note');
+  if (selRelief) {
+    const r = TAX_RELIEFS.find(x => x.id === selRelief);
+    note.textContent = r ? `Limit: RM${r.limit.toLocaleString()} — ${r.desc}` : '';
+  } else {
+    note.textContent = 'Tap a category to tag this expense';
+  }
+}
+function pickRelief(id) {
+  selRelief = selRelief === id ? null : id;
+  buildReliefGrid();
 }
 
 function pickReceipt() {
@@ -996,7 +1101,7 @@ function pickCat(id) { selCat = id; buildCatGrid(); }
 // ─── Add / Edit sheet ────────────────────────────────────────────
 function openAdd() {
   editId = null; eType = 'out'; selCat = 'food';
-  taxDed = false; rcptData = null;
+  taxDed = false; rcptData = null; selRelief = null;
   document.getElementById('sh-title').textContent = 'Add Entry';
   document.getElementById('i-amt').value  = '';
   document.getElementById('i-desc').value = '';
@@ -1011,7 +1116,7 @@ function openEdit(id) {
   const e = load().find(x => x.id === id);
   if (!e) return;
   editId = id; eType = e.type || 'out'; selCat = e.category;
-  taxDed = !!e.taxDeductible; rcptData = e.receipt || null;
+  taxDed = !!e.taxDeductible; rcptData = e.receipt || null; selRelief = e.taxRelief || null;
   document.getElementById('sh-title').textContent = 'Edit Entry';
   document.getElementById('i-amt').value  = e.amount;
   document.getElementById('i-desc').value = e.description || '';
@@ -1032,14 +1137,21 @@ function saveEntry() {
   if (!date) return;
   const data = load();
   const extras = {};
-  if (eType === 'out' && taxDed) extras.taxDeductible = true;
-  else delete extras.taxDeductible;
+  if (eType === 'out' && taxDed) {
+    extras.taxDeductible = true;
+    if (selRelief) extras.taxRelief = selRelief;
+  }
   if (rcptData) extras.receipt = rcptData;
   if (editId) {
     const i = data.findIndex(e => e.id === editId);
     if (i !== -1) {
       const updated = { ...data[i], amount:amt, description:desc, category:selCat, date, type:eType };
-      if (eType === 'out' && taxDed) updated.taxDeductible = true; else delete updated.taxDeductible;
+      if (eType === 'out' && taxDed) {
+        updated.taxDeductible = true;
+        if (selRelief) updated.taxRelief = selRelief; else delete updated.taxRelief;
+      } else {
+        delete updated.taxDeductible; delete updated.taxRelief;
+      }
       if (rcptData) updated.receipt = rcptData; else delete updated.receipt;
       data[i] = updated;
     }
