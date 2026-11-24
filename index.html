@@ -394,6 +394,7 @@
     </div>
     <div id="day-hand" style="font-size:22px;font-weight:700;color:var(--green)">RM 0</div>
   </div>
+  <div id="upcoming-payments" style="margin:8px 14px;display:none"></div>
   <div class="card" style="padding:0 14px"><div id="day-list"></div></div>
 </div>
 
@@ -710,6 +711,52 @@ function goTab(t) {
   if (t === 'settings') renderSettings();
 }
 
+// ─── Upcoming Payments (Loan & Bill plan entries, next 5 days) ───
+function renderUpcoming() {
+  const today = new Date(); today.setHours(0,0,0,0);
+  const keys = [];
+  for (let i = 0; i <= 5; i++) {
+    const d = new Date(today); d.setDate(d.getDate() + i);
+    keys.push(dKey(d));
+  }
+  const payments = load().filter(e =>
+    e.plan === true && e.type === 'out' &&
+    (e.category === 'loan' || e.category === 'bill') &&
+    keys.includes(e.date)
+  ).sort((a, b) => a.date.localeCompare(b.date));
+
+  const wrap = document.getElementById('upcoming-payments');
+  if (!payments.length) { wrap.style.display = 'none'; return; }
+
+  const CAT = { loan: { emoji: '🏦', label: 'Loan', color: '#2980b9' }, bill: { emoji: '📄', label: 'Bill', color: '#8e44ad' } };
+  const todayKey = dKey(new Date());
+
+  const rows = payments.map(e => {
+    const cat = CAT[e.category] || { emoji: '💳', label: e.category, color: '#666' };
+    const isToday = e.date === todayKey;
+    const isPast  = e.date < todayKey;
+    const dateD   = new Date(e.date + 'T00:00:00');
+    const dateLbl = isToday ? 'Today' : isPast ? '⚠️ Overdue' : dateD.toLocaleDateString('en-MY', { weekday: 'short', day: 'numeric', month: 'short' });
+    const dateColor = isPast ? '#c0392b' : isToday ? 'var(--green)' : 'var(--muted)';
+    return `<div style="display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border)">
+      <div style="display:flex;align-items:center;gap:8px">
+        <span style="font-size:18px">${cat.emoji}</span>
+        <div>
+          <div style="font-size:13px;font-weight:600;color:var(--text)">${e.note || cat.label}</div>
+          <div style="font-size:11px;color:${dateColor};font-weight:500">${dateLbl}</div>
+        </div>
+      </div>
+      <div style="font-size:14px;font-weight:700;color:${cat.color}">${fmt(e.amount)}</div>
+    </div>`;
+  }).join('');
+
+  wrap.style.display = '';
+  wrap.innerHTML = `<div style="background:var(--card);border-radius:14px;padding:13px 16px;box-shadow:0 1px 4px rgba(0,0,0,.07)">
+    <div style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">⏰ Upcoming Payments (5 days)</div>
+    ${rows}
+  </div>`;
+}
+
 // ─── Daily ───────────────────────────────────────────────────────
 function changeDay(d) { vDay = new Date(vDay); vDay.setDate(vDay.getDate()+d); renderDay(); }
 
@@ -735,6 +782,8 @@ function renderDay() {
   handEl.textContent = fmt(hand);
   handEl.style.color = hand >= 0 ? 'var(--green)' : '#c0392b';
   document.getElementById('day-hand-sub').textContent = key === today ? 'up to today' : 'up to ' + vDay.toLocaleDateString('en-MY',{day:'numeric',month:'short'});
+
+  renderUpcoming();
 
   const list = document.getElementById('day-list');
   if (!items.length) {
