@@ -715,7 +715,7 @@ function goTab(t) {
 function renderUpcoming() {
   const today = new Date(); today.setHours(0,0,0,0);
   const keys = [];
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i <= 10; i++) {
     const d = new Date(today); d.setDate(d.getDate() + i);
     keys.push(dKey(d));
   }
@@ -752,7 +752,7 @@ function renderUpcoming() {
 
   wrap.style.display = '';
   wrap.innerHTML = `<div style="background:var(--card);border-radius:14px;padding:13px 16px;box-shadow:0 1px 4px rgba(0,0,0,.07)">
-    <div style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">⏰ Upcoming Payments (5 days)</div>
+    <div style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px">⏰ Upcoming Payments (10 days)</div>
     ${rows}
   </div>`;
 }
