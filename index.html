@@ -118,6 +118,21 @@
       z-index: 150; transition: transform .2s;
     }
     .fab:active { transform: scale(.9); }
+    .fab-scan {
+      position: fixed; bottom: 154px; right: 18px;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--card); border: 2px solid var(--border);
+      color: var(--text); font-size: 20px; cursor: pointer;
+      box-shadow: 0 2px 10px rgba(0,0,0,.13);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 150; transition: transform .2s;
+    }
+    .fab-scan:active { transform: scale(.9); }
+    #scan-ov {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.72); z-index: 500;
+      flex-direction: column; align-items: center; justify-content: center; gap: 14px;
+    }
 
     /* ── Bottom nav ── */
     .bottom-nav {
@@ -527,6 +542,15 @@
   </div>
 </div>
 
+<button class="fab-scan" id="fab-scan" onclick="triggerScan()" title="Scan transaction">📸</button>
+<input type="file" id="scan-input" accept="image/*" style="display:none" onchange="handleScan(this)">
+<div id="scan-ov">
+  <div style="color:#fff;font-size:15px;font-weight:600;letter-spacing:.3px" id="scan-status">Reading image…</div>
+  <div style="width:220px;height:5px;background:rgba(255,255,255,.18);border-radius:4px;overflow:hidden">
+    <div id="scan-bar" style="height:100%;background:var(--green);width:0%;transition:width .4s ease"></div>
+  </div>
+  <div style="color:rgba(255,255,255,.55);font-size:12px">This may take a few seconds</div>
+</div>
 <button class="fab" id="fab" onclick="openAdd()">+</button>
 
 <div class="bottom-nav">
@@ -702,7 +726,9 @@ function goTab(t) {
   document.querySelectorAll('.nav-btn').forEach(e => e.classList.remove('active'));
   document.getElementById('tab-' + t).classList.add('active');
   document.getElementById('nav-' + t).classList.add('active');
-  document.getElementById('fab').style.display = (t === 'settings' || t === 'budget') ? 'none' : 'flex';
+  const fabVis = (t === 'settings' || t === 'budget') ? 'none' : 'flex';
+  document.getElementById('fab').style.display      = fabVis;
+  document.getElementById('fab-scan').style.display = fabVis;
   document.getElementById('hdr-title').textContent = {daily:'Today',budget:'Budget',actual:'Actual',settings:'Settings'}[t];
   document.getElementById('hdr-sub').textContent = '';
   if (t === 'daily')    renderDay();
@@ -711,7 +737,107 @@ function goTab(t) {
   if (t === 'settings') renderSettings();
 }
 
-// ─── Upcoming Payments (Loan & Bill plan entries, next 5 days) ───
+// ─── Scan Transaction ────────────────────────────────────────────
+function triggerScan() { document.getElementById('scan-input').click(); }
+
+async function handleScan(input) {
+  const file = input.files[0]; if (!file) return;
+  input.value = '';
+  const ov     = document.getElementById('scan-ov');
+  const status = document.getElementById('scan-status');
+  const bar    = document.getElementById('scan-bar');
+  ov.style.display = 'flex';
+  status.textContent = 'Loading OCR engine…'; bar.style.width = '8%';
+  try {
+    if (!window.Tesseract) {
+      await new Promise((res, rej) => {
+        const s = document.createElement('script');
+        s.src = 'https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js';
+        s.onload = res; s.onerror = rej;
+        document.head.appendChild(s);
+      });
+    }
+    status.textContent = 'Scanning image…'; bar.style.width = '25%';
+    const result = await Tesseract.recognize(file, 'eng', {
+      logger: m => {
+        if (m.status === 'recognizing text')
+          bar.style.width = (25 + m.progress * 55) + '%';
+      }
+    });
+    bar.style.width = '90%'; status.textContent = 'Parsing…';
+    const parsed = _parseTxnText(result.data.text);
+    bar.style.width = '100%';
+    await new Promise(r => setTimeout(r, 300));
+    ov.style.display = 'none';
+
+    openAdd();
+    if (parsed.amount !== null) document.getElementById('i-amt').value = parsed.amount;
+    if (parsed.date)            document.getElementById('i-date').value = parsed.date;
+    if (parsed.desc)            document.getElementById('i-desc').value = parsed.desc;
+    if (parsed.cat)             { selCat = parsed.cat; setType('out'); }
+
+    // Attach screenshot as receipt
+    const reader = new FileReader();
+    reader.onload = ev => { rcptData = ev.target.result; _showRcptPreview(rcptData); };
+    reader.readAsDataURL(file);
+  } catch(e) {
+    ov.style.display = 'none';
+    alert('Could not read screenshot. Try a clearer image.');
+  }
+}
+
+function _parseTxnText(text) {
+  // ── Amount ──
+  let amount = null;
+  const amtM = text.match(/RM\s*([0-9,]+\.?\d{0,2})/i);
+  if (amtM) { amount = parseFloat(amtM[1].replace(/,/g,'')); if (isNaN(amount)) amount = null; }
+  if (amount === null) {
+    const bare = text.match(/\b([0-9,]+\.\d{2})\b/);
+    if (bare) { amount = parseFloat(bare[1].replace(/,/g,'')); if (isNaN(amount)) amount = null; }
+  }
+
+  // ── Date ──
+  let date = null;
+  const MON = {jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
+  const dp = [
+    [/(\d{1,2})\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\s+(\d{4})/i, (m)=>[parseInt(m[3]),MON[m[2].slice(0,3).toLowerCase()],parseInt(m[1])]],
+    [/(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})/, (m)=>[parseInt(m[1]),parseInt(m[2]),parseInt(m[3])]],
+    [/(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})/, (m)=>[parseInt(m[3]),parseInt(m[2]),parseInt(m[1])]],
+  ];
+  for (const [p,fn] of dp) {
+    const m = text.match(p);
+    if (m) { const [y,mo,d]=fn(m); date=`${y}-${String(mo).padStart(2,'0')}-${String(d).padStart(2,'0')}`; break; }
+  }
+
+  // ── Description ──
+  let desc = null;
+  const kws = ['payment to ','transfer to ','to ','from ','merchant ','payee ','at ','kepada '];
+  for (const kw of kws) {
+    const idx = text.toLowerCase().indexOf(kw);
+    if (idx !== -1) {
+      const after = text.slice(idx + kw.length).split('\n')[0].trim().replace(/\s+/g,' ');
+      if (after.length > 2 && after.length < 60) { desc = after; break; }
+    }
+  }
+  if (!desc) {
+    const lines = text.split('\n').map(l=>l.trim()).filter(l=>l.length>3&&l.length<55&&!/^RM/i.test(l)&&!/^\d+\.\d{2}/.test(l)&&!/^\d{1,2}[\/\-]\d{1,2}/.test(l));
+    if (lines.length) desc = lines[0];
+  }
+
+  // ── Category guess ──
+  const lo = text.toLowerCase();
+  let cat = 'misc';
+  if (/grab.?food|mcd|kfc|pizza|restaurant|cafe|kedai|makan|burger|nasi|roti/.test(lo)) cat = 'food';
+  else if (/shell|petronas|petron|caltex|ron95|fuel|petrol/.test(lo)) cat = 'transport';
+  else if (/shopee|lazada|zalora|mydin|giant|tesco|aeon|supermarket|store/.test(lo)) cat = 'shopping';
+  else if (/celcom|digi|maxis|unifi|streamyx|telco|mobile/.test(lo)) cat = 'bill';
+  else if (/clinic|hospital|pharmacy|farmasi|guardian|watson|ubat/.test(lo)) cat = 'health';
+  else if (/grab|e-hailing|lrt|mrt|rapidkl|bus|train|toll/.test(lo)) cat = 'transport';
+
+  return { amount, date, desc, cat };
+}
+
+// ─── Upcoming Payments (Loan & Bill plan entries, next 10 days) ───
 function renderUpcoming() {
   const today = new Date(); today.setHours(0,0,0,0);
   const keys = [];
